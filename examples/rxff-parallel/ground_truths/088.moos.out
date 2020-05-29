@@ -1,0 +1,2915 @@
+
+Running Job 1 of 2 ZrOx.in
+qchem ZrOx.in_18462.0 /tmp/5732865.priya/ZrOx.save/ 1
+/usr/usc/qchem/4.4/bin/mpi/mpirun_qchem -machinefile /usr/usc/qchem/4.4/bin/mpi/machines -np 1 /usr/usc/qchem/4.4/exe/qcprog.exe ZrOx.in_18462.0 /tmp/5732865.priya/ZrOx.save/
+
+Process 0 of 1 is on hpc3461.hpcc.usc.edu - thread support 0
+initial socket setup ...start
+initial socket setup ...done 
+now start server 0 ... 
+Check license passed
+
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 4.4, Q-Chem, Inc., Pleasanton, CA (2016)
+
+ Y. Shao,  Z. Gan,  E. Epifanovsky,  A. T. B. Gilbert,  M. Wormit,  
+ J. Kussmann,  A. W. Lange,  A. Behn,  J. Deng,  X. Feng,  D. Ghosh,  
+ M. Goldey,  P. R. Horn,  L. D. Jacobson,  I. Kaliman,  F.Rob,  
+ R. Z. Khaliullin,  T. Kus,  A. Landau,  J. Liu,  E. I. Proynov,  Y. M. Rhee,  
+ R. M. Richard,  M. A. Rohrdanz,  R. P. Steele,  E. J. Sundstrom,  
+ H. L. Woodcock III,  P. M. Zimmerman,  D. Zuev,  B. Albrecht,  E. Alguire,  
+ B. Austin,  S. A. Baeppler,  G. J. O. Beran,  Y. A. Bernard,  E. Berquist,  
+ K. Brandhorst,  K. B. Bravaya,  S. T. Brown,  D. Casanova,  C.-M. Chang,  
+ Y. Chen,  S. H. Chien,  K. D. Closser,  M. P. Coons,  D. L. Crittenden,  
+ S. Dasgupta,  M. Diedenhofen,  R. A. DiStasio Jr.,  H. Do,  A. D. Dutoi,  
+ R. G. Edgar,  P.-T. Fang,  S. Fatehi,  Q. Feng,  L. Fusti-Molnar,  
+ A. Ghysels,  A. Golubeva-Zadorozhnaya,  J. Gomes,  A. Gunina,  
+ M. W. D. Hanson-Heine,  P. H. P. Harbach,  A. W. Hauser,  E. G. Hohenstein,  
+ Z. C. Holden,  K. Hui,  T.-C. Jagau,  H. Ji,  B. Kaduk,  K. Khistyaev,  
+ Jaehoon Kim,  Jihan Kim,  R. A. King,  P. Klunzinger,  D. Kosenkov,  
+ T. Kowalczyk,  C. M. Krauter,  A. Kunitsa,  K. U. Lao,  A. Laurent,  
+ K. V. Lawler,  D. Lefrancois,  S. Lehtola,  S. V. Levchenko,  C. Y. Lin,  
+ Y.-S. Lin,  F. Liu,  E. Livshits,  R. C. Lochan,  A. Luenser,  P. Manohar,  
+ S. F. Manzer,  S.-P. Mao,  Y. Mao,  N. Mardirossian,  A. V. Marenich,  
+ L. A. Martinez-Martinez,  S. A. Maurer,  N. J. Mayhall,  J.-M. Mewes,  
+ A. F. Morrison,  K. Nanda,  C. M. Oana,  R. Olivares-Amaya,  D. P. O'Neill,  
+ J. A. Parkhill,  T. M. Perrine,  R. Peverati,  P. A. Pieniazek,  F. Plasser,  
+ A. Prociuk,  D. R. Rehn,  E. Rosta,  N. J. Russ,  N. Sergueev,  
+ S. M. Sharada,  S. Sharma,  D. W. Small,  A. Sodt,  T. Stauch,  T. Stein,  
+ D. Stuck,  Y.-C. Su,  A. J. W. Thom,  T. Tsuchimochi,  L. Vogt,  O. Vydrov,  
+ T. Wang,  M. A. Watson,  J. Wenzel,  A. White,  C. F. Williams,  
+ V. Vanovschi,  S. Yeganeh,  S. R. Yost,  Z.-Q. You,  I. Y. Zhang,  X. Zhang,  
+ Y. Zhao,  B. R. Brooks,  G. K. L. Chan,  D. M. Chipman,  C. J. Cramer,  
+ W. A. Goddard III,  M. S. Gordon,  W. J. Hehre,  A. Klamt,  
+ H. F. Schaefer III,  M. W. Schmidt,  C. D. Sherrill,  D. G. Truhlar,  
+ A. Warshel,  X. Xu,  A. Aspuru-Guzik,  R. Baer,  A. T. Bell,  N. A. Besley,  
+ J.-D. Chai,  A. Dreuw,  B. D. Dunietz,  T. R. Furlani,  S. R. Gwaltney,  
+ C.-P. Hsu,  Y. Jung,  J. Kong,  D. S. Lambrecht,  W. Liang,  C. Ochsenfeld,  
+ V. A. Rassolov,  L. V. Slipchenko,  J. E. Subotnik,  T. Van Voorhis,  
+ J. M. Herbert,  A. I. Krylov,  P. M. W. Gill,  M. Head-Gordon
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  J. Baker,  E. F. C. Byrd,  A. K. Chakraborty,  C.-L. Cheng,  
+ H. Dachsel,  R. J. Doerksen,  G. Hawkins,  A. Heyden,  S. Hirata,  
+ G. Kedziora,  F. J. Keil,  C. Kelley,  P. P. Korambath,  W. Kurlancheek,  
+ A. M. Lee,  M. S. Lee,  D. Liotard,  I. Lotan,  P. E. Maslen,  N. Nair,  
+ D. Neuhauser,  R. Olson,  B. Peters,  J. Ritchie,  N. E. Schultz,  
+ N. Shenvi,  A. C. Simmonett,  K. S. Thanthiriwatte,  Q. Wu,  W. Zhang
+
+ Please cite Q-Chem as follows:
+ Y. Shao et al., Mol. Phys. 113, 184-215 (2015)
+ DOI: 10.1080/00268976.2014.952696
+
+ Q-Chem 4.4.1 for Intel X86 Linux
+
+ Parts of Q-Chem use Armadillo 5.200.1 (Boston Tea Smuggler).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Fri Jan 17 20:03:11 2020  
+
+Host: 
+0
+
+     Scratch files written to /tmp/5732865.priya/ZrOx.save//
+ Jul2716 11668_ 21447  21445 5558   
+ Parallel job on  1  processors
+Processing $rem in /usr/usc/qchem/4.4/config/preferences.
+ MEM_TOTAL  2000 
+
+Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$comment
+--------------------------------------------------------
+A SINGLE POINT DFT CALCULATION WITH BASIS SET PROJECTION
+--------------------------------------------------------
+$end
+
+$molecule
+0 1
+Zr 0.00000 0.00000 0.00000
+O 0.00000 0.00000 1.78128
+O 0.00000 0.00000 -1.78127
+$end
+
+$rem
+JOBTYPE   SP
+METHOD   B3LYP
+BASIS   GEN
+ECP   GEN
+MAX_SCF_CYCLES   200
+SCF_CONVERGENCE 8
+SCF_PRINT 1
+PDB_PRINT 2
+THRESH 14
+VARTHRESH 14
+INCDFT FALSE
+SYMMETRY False
+Sym_ignore True
+SCF_ALGORITHM GDM
+XC_GRID 000128000302
+DFT_D           EMPIRICAL_GRIMME3
+DFT_D3_S6       1000
+DFT_D3_RS6     1261
+DFT_D3_S8      1703
+DFT_D3_3BODY    FALSE
+$end
+
+$basis
+O
+6-31+G**
+****
+S
+6-31+G**
+****
+Zr
+LanL2DZ
+****
+$end
+
+$ecp
+Zr
+LanL2DZ
+****
+$end
+
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      Zr      0.0000000000     0.0000000000     0.0000000000
+    2      O       0.0000000000     0.0000000000     1.7812800000
+    3      O       0.0000000000     0.0000000000    -1.7812700000
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =    66.5452424832 hartrees
+ There are       14 alpha and       14 beta electrons
+
+ Q-Chem warning in module /home/scratch/svnadmin/11668_zgan/qchem/forms1/BasisType.C, line 1419:
+
+ Setting pure/cartesian flag to 2111 for general basis
+
+
+ Requested basis set is non-standard
+ There are 18 shells and 58 basis functions
+
+ Total QAlloc Memory Limit   2000 MB
+ Mega-Array Size        61 MB
+ MEM_STATIC part        62 MB
+
+                       Distance Matrix (Angstroms)
+             Zr(  1)   O (  2)
+   O (  2)  1.781280
+   O (  3)  1.781270  3.562550
+ 
+ A cutoff of  1.0D-14 yielded    168 shell pairs
+ There are      1787 function pairs (      2049 Cartesian)
+ 
+ -------------------------------------------------------
+ OpenMP Integral Computing Module                       
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ Integral Job Info:
+ Integral job number is                      11
+ Integral operator is                         1
+ short-range coefficients                     0
+ long-range coefficients              100000000
+ Omega coefficients                           0
+ if combine SR and LR in K                    0
+ Integral screening is                        0
+ Integral computing path is                   2
+ max size of driver memory is            800000
+ size of driver memory is                593474
+ size of scratch memory is             11771240
+ max col of scratch BK array               1296
+ max len of scratch array in speh3          155
+ max len of scratch index in speh4           18
+ max int batch size is                      520
+ min int batch size is                       52
+ fixed nKL is                                52
+ max L of basis functions is                  2
+ order of int derivative is                   0
+ number of shells is                         18
+ number of basis is                          62
+ number of cartesian basis is                62
+ number of contracted shell pairs           168
+ number of primitive shell pairs            851
+ maxK2 (contraction) of shell pair           36
+ max number of K2 of shell pair               1
+ max number of CS2 of shell pair             12
+ max number of PS2 of shell pair             72
+ mem total for path MDJ                   13288
+ -------------------------------------------------------
+ Requested basis set is non-standard
+ Compound shells will be simplified
+ There are 24 shells and 58 basis functions
+ A cutoff of  1.0D-14 yielded    295 shell pairs
+ There are      1769 function pairs (      2031 Cartesian)
+ Smallest overlap matrix eigenvalue = 9.52E-04
+
+ Scale SEOQF with 1.000000e-01/1.000000e-01/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =    -0.0000000054 hartrees
+ Guess MOs from core Hamiltonian diagonalization
+ A restricted hybrid HF-DFT SCF calculation will be
+ performed using Geometric Direct Minimization
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (128,302) quadrature formula
+ Dispersion:   Grimme D3
+ SCF converges when RMS gradient is below 1.0E-08
+ Maximum number of minimization steps = 200
+ using 12 threads for integral computing 
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  1
+   GDM::PreWSS: working subspace size set to            1
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   0.000000000000000E+000
+   GDM::BFGS:   lowest Hinv e-value     1.00000000000000     
+   GDM::BFGS:   highest Hinv e-value    1.00000000000000     
+   GDM::      : max scaling in EWCs is          1.41421356237309     
+   GDM::      : max rotation in step is        0.129835559541789     
+   GDM::        grad.step =   -1.42304054084142     
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -183.6810609735      1.90E+00  Gap = -47.13 eV  Descent step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        -2.80026015256990     
+   GDM::trust : predicted energy change was   -0.163350000000000     
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  2
+   GDM::PreWSS: working subspace size set to            2
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   1.418309913958637E-014
+   GDM::BFGS:   lowest Hinv e-value    0.455658943870349     
+   GDM::BFGS:   highest Hinv e-value    4.14923373635058     
+   GDM::      : max scaling in EWCs is          1.41421356237309     
+   GDM::      : max rotation in step is       -0.194223491725118     
+   GDM::        grad.step =   -1.69857956053431     
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    2    -186.4813211261      2.30E+00  Gap = 183.19 eV  Descent step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        -3.30125019514014     
+   GDM::trust : predicted energy change was   -0.131967298688854     
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  3
+   GDM::PreWSS: working subspace size set to            3
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   1.025233717366625E-012
+   GDM::BFGS:   lowest Hinv e-value    0.575377241815254     
+   GDM::BFGS:   highest Hinv e-value    1.91358896810894     
+   GDM::      : max scaling in EWCs is          1.41421356237309     
+   GDM::      : max rotation in step is       -0.199051503132869     
+   GDM::        grad.step =   -1.81422372528868     
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    3    -189.7825713213      2.34E+00  Gap = 183.19 eV  Descent step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        -3.20624345753211     
+   GDM::trust : predicted energy change was   -0.186411600040201     
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  4
+   GDM::PreWSS: working subspace size set to            4
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   1.592996567989502E-012
+   GDM::BFGS:   lowest Hinv e-value    0.515795664609319     
+   GDM::BFGS:   highest Hinv e-value    2.21939816743201     
+   GDM::      : max scaling in EWCs is          1.41421356237309     
+   GDM::      : max rotation in step is        0.126942692727001     
+   GDM::        grad.step =  -0.895780424402815     
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    4    -192.9888147788      8.85E-01  Gap = 183.19 eV  Descent step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        -1.54886835867839     
+   GDM::trust : predicted energy change was   -0.194759904077718     
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  5
+   GDM::PreWSS: working subspace size set to            5
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   1.808705962780266E-012
+   GDM::BFGS:   lowest Hinv e-value    0.438957739112111     
+   GDM::BFGS:   highest Hinv e-value    2.52034121295647     
+   GDM::      : max scaling in EWCs is          2.82842712474619     
+   GDM::      : max rotation in step is        0.400139523400957     
+   GDM::        grad.step =  -0.701814558879580     
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    5    -194.5376831375      9.12E-01  Gap = 183.19 eV  Descent step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        -1.13021345061964     
+   GDM::trust : predicted energy change was   -0.174083551702605     
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  6
+   GDM::PreWSS: working subspace size set to            6
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   5.752870402275789E-012
+   GDM::BFGS:   lowest Hinv e-value    0.339472184021546     
+   GDM::BFGS:   highest Hinv e-value    2.68903069974601     
+   GDM::      : max scaling in EWCs is          2.82842712474619     
+   GDM::      : max rotation in step is       -0.262849425830704     
+   GDM::        grad.step =  -0.542861834135621     
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    6    -195.6678965881      5.72E-01  Gap = 183.19 eV  Descent step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -0.811412215318796     
+   GDM::trust : predicted energy change was   -0.165890289647440     
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  7
+   GDM::PreWSS: working subspace size set to            7
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   4.080194515587721E-012
+   GDM::BFGS:   lowest Hinv e-value    0.279148100206894     
+   GDM::BFGS:   highest Hinv e-value    2.71010269535870     
+   GDM::      : max scaling in EWCs is          2.82842712474619     
+   GDM::      : max rotation in step is       -0.346566634725695     
+   GDM::        grad.step =  -0.308566684970637     
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    7    -196.4793088034      5.29E-01  Gap = 183.19 eV  Descent step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -0.286872722825905     
+   GDM::trust : predicted energy change was   -0.165447610985295     
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  8
+   GDM::PreWSS: working subspace size set to            8
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   4.743760939618369E-012
+   GDM::BFGS:   lowest Hinv e-value    0.233047586252046     
+   GDM::BFGS:   highest Hinv e-value    2.67856655541975     
+   GDM::      : max scaling in EWCs is          1.92063540030118     
+   GDM::      : max rotation in step is        0.128012113276659     
+   GDM::        grad.step =  -0.210316076331918     
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    8    -196.7661815262      2.67E-01  Gap = 183.19 eV  Descent step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -0.106401241769220     
+   GDM::trust : predicted energy change was   -0.257774522662180     
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  9
+   GDM::PreWSS: working subspace size set to            9
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   2.230528262092690E-011
+   GDM::BFGS:   lowest Hinv e-value    0.219855014459136     
+   GDM::BFGS:   highest Hinv e-value    2.65514078107741     
+   GDM::      : max scaling in EWCs is          2.82842712474619     
+   GDM::      : max rotation in step is       -0.142124133219588     
+   GDM::        grad.step =  -0.104188258328268     
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    9    -196.8725827680      2.53E-01  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -6.115511602169477E-002
+   GDM::trust : predicted energy change was   -0.156282387492402     
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 10
+   GDM::PreWSS: working subspace size set to           10
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   9.108519494205325E-012
+   GDM::BFGS:   lowest Hinv e-value    0.278743606059857     
+   GDM::BFGS:   highest Hinv e-value    2.70631566967467     
+   GDM::      : max scaling in EWCs is          2.23511614451703     
+   GDM::      : max rotation in step is        7.172423771707742E-002
+   GDM::        grad.step =  -2.948582987540473E-002
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   10    -196.9337378840      7.15E-02  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.956976100981933E-002
+   GDM::trust : predicted energy change was   -4.422874481310710E-002
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 11
+   GDM::PreWSS: working subspace size set to           11
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   9.744753615148483E-012
+   GDM::BFGS:   lowest Hinv e-value    0.286571232748234     
+   GDM::BFGS:   highest Hinv e-value    2.68200310693832     
+   GDM::      : max scaling in EWCs is          2.82842712474619     
+   GDM::      : max rotation in step is       -2.967239454225773E-002
+   GDM::        grad.step =  -4.898522468542552E-003
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   11    -196.9533076450      3.17E-02  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -3.038349774982407E-003
+   GDM::trust : predicted energy change was   -7.347783702813826E-003
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 12
+   GDM::PreWSS: working subspace size set to           12
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   4.278893905862446E-011
+   GDM::BFGS:   lowest Hinv e-value    0.272457379794496     
+   GDM::BFGS:   highest Hinv e-value    2.65482250337576     
+   GDM::      : max scaling in EWCs is          2.82842712474619     
+   GDM::      : max rotation in step is       -1.262737777521461E-002
+   GDM::        grad.step =  -9.463050072659336E-004
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   12    -196.9563459948      1.97E-02  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -7.974215075989832E-004
+   GDM::trust : predicted energy change was   -1.419457510898900E-003
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 13
+   GDM::PreWSS: working subspace size set to           13
+   GDM::PrEWSS: # of linearly dependent vectors =            1
+   GDM::PrEWSS: Max dev from orthonormality =   5.814028425366047E-011
+   GDM::BFGS:   lowest Hinv e-value    0.280375574817836     
+   GDM::BFGS:   highest Hinv e-value    2.31760159979659     
+   GDM::      : max scaling in EWCs is          2.76799458446886     
+   GDM::      : max rotation in step is       -5.261794727726491E-003
+   GDM::        grad.step =  -1.321270796441396E-004
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   13    -196.9571434163      4.23E-03  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        1.968513743122458E-007
+   GDM::trust : predicted energy change was   -1.981906194662094E-004
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::search:  On step            1 .  The current bracket is:
+       left   : x =  0.0000E+00, e =      -196.9571434163, g = -0.1421E-01
+       current: x =  0.9296E-02, e =      -196.9571432195, g =  0.1424E-01
+       right  : x =  0.1000E+04, e =      1000.0000000000, g =  0.1000E+04
+       next   : x =  0.4641E-02
+   GDM::      : max rotation in step is       -2.626983515795365E-003
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   14    -196.9571432195      4.97E-03  Gap = 183.19 eV  Line search: overstep
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -6.601995966093455E-005
+   GDM::trust : predicted energy change was   -1.981906194662094E-004
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 14
+   GDM::PreWSS: working subspace size set to           14
+   GDM::PrEWSS: # of linearly dependent vectors =            2
+   GDM::PrEWSS: Max dev from orthonormality =   3.192724556955184E-011
+   GDM::BFGS:   lowest Hinv e-value    0.276762190910847     
+   GDM::BFGS:   highest Hinv e-value    1.58177229505659     
+   GDM::      : max scaling in EWCs is          2.75334640202943     
+   GDM::      : max rotation in step is        1.369584948126311E-003
+   GDM::        grad.step =  -1.073914418276201E-005
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   15    -196.9572094363      1.50E-03  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -7.855929027300590E-006
+   GDM::trust : predicted energy change was   -1.610871627414301E-005
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 15
+   GDM::PreWSS: working subspace size set to           15
+   GDM::PrEWSS: # of linearly dependent vectors =            3
+   GDM::PrEWSS: Max dev from orthonormality =   4.053627572497831E-011
+   GDM::BFGS:   lowest Hinv e-value    0.258212676452611     
+   GDM::BFGS:   highest Hinv e-value    1.70374704622516     
+   GDM::      : max scaling in EWCs is          2.77895171906616     
+   GDM::      : max rotation in step is        1.768208166408982E-003
+   GDM::        grad.step =  -4.001447561053146E-006
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   16    -196.9572172922      1.14E-03  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        6.956646672051647E-006
+   GDM::trust : predicted energy change was   -6.002171341579717E-006
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::search:  On step            1 .  The current bracket is:
+       left   : x =  0.0000E+00, e =      -196.9572172922, g = -0.1541E-02
+       current: x =  0.2597E-02, e =      -196.9572103356, g =  0.4219E-02
+       right  : x =  0.1000E+04, e =      1000.0000000000, g =  0.1000E+04
+       next   : x =  0.4742E-03
+   GDM::      : max rotation in step is        3.228386298019077E-004
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   17    -196.9572103356      4.30E-04  Gap = 183.19 eV  Line search: overstep
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -9.625444192806754E-007
+   GDM::trust : predicted energy change was   -6.002171341579717E-006
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 16
+   GDM::PreWSS: working subspace size set to           16
+   GDM::PrEWSS: # of linearly dependent vectors =            4
+   GDM::PrEWSS: Max dev from orthonormality =   4.343945342322186E-011
+   GDM::BFGS:   lowest Hinv e-value    0.193229260492808     
+   GDM::BFGS:   highest Hinv e-value    1.57297267234709     
+   GDM::      : max scaling in EWCs is          2.77971276500233     
+   GDM::      : max rotation in step is       -3.249138407865615E-004
+   GDM::        grad.step =  -8.449096417563356E-007
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   18    -196.9572182548      4.58E-04  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -8.152595682986430E-007
+   GDM::trust : predicted energy change was   -1.267364462634503E-006
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 17
+   GDM::PreWSS: working subspace size set to           17
+   GDM::PrEWSS: # of linearly dependent vectors =            4
+   GDM::PrEWSS: Max dev from orthonormality =   1.885015338265461E-010
+   GDM::BFGS:   lowest Hinv e-value    0.186304527103607     
+   GDM::BFGS:   highest Hinv e-value    1.52570718618197     
+   GDM::      : max scaling in EWCs is          2.77403078977313     
+   GDM::      : max rotation in step is       -5.091906964288879E-005
+   GDM::        grad.step =  -6.194743086352218E-008
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   19    -196.9572190700      1.32E-04  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -8.098604098449869E-008
+   GDM::trust : predicted energy change was   -9.292114629528327E-008
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 18
+   GDM::PreWSS: working subspace size set to           18
+   GDM::PrEWSS: # of linearly dependent vectors =            5
+   GDM::PrEWSS: Max dev from orthonormality =   2.645676872026215E-010
+   GDM::BFGS:   lowest Hinv e-value    0.193188802074509     
+   GDM::BFGS:   highest Hinv e-value    1.47923935696405     
+   GDM::      : max scaling in EWCs is          2.77408536288285     
+   GDM::      : max rotation in step is        2.111374520656859E-005
+   GDM::        grad.step =  -1.754096572402092E-008
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   20    -196.9572191510      4.75E-05  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.629126700208872E-008
+   GDM::trust : predicted energy change was   -2.631144858603138E-008
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 19
+   GDM::PreWSS: working subspace size set to           16
+   GDM::PrEWSS: # of linearly dependent vectors =            2
+   GDM::PrEWSS: Max dev from orthonormality =   1.054274167966440E-010
+   GDM::BFGS:   lowest Hinv e-value    0.195447395386773     
+   GDM::BFGS:   highest Hinv e-value    1.39460983525863     
+   GDM::      : max scaling in EWCs is          2.77424482989658     
+   GDM::      : max rotation in step is        9.386983315505004E-006
+   GDM::        grad.step =  -5.125194867750509E-010
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   21    -196.9572191673      8.17E-06  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -3.984439445048338E-010
+   GDM::trust : predicted energy change was   -7.687792301625763E-010
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 17
+   GDM::PreWSS: working subspace size set to           13
+   GDM::PrEWSS: # of linearly dependent vectors =            1
+   GDM::PrEWSS: Max dev from orthonormality =   1.384041423135862E-010
+   GDM::BFGS:   lowest Hinv e-value    0.197686912337821     
+   GDM::BFGS:   highest Hinv e-value    1.25578984277838     
+   GDM::      : max scaling in EWCs is          2.77417462178120     
+   GDM::      : max rotation in step is       -2.419967759552469E-006
+   GDM::        grad.step =  -3.502822193709806E-011
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   22    -196.9572191677      2.55E-06  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -3.439026841078885E-011
+   GDM::trust : predicted energy change was   -5.254233290564708E-011
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 14
+   GDM::PreWSS: working subspace size set to           11
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   2.512276359167842E-010
+   GDM::BFGS:   lowest Hinv e-value    0.197963347048637     
+   GDM::BFGS:   highest Hinv e-value    2.32108567993027     
+   GDM::      : max scaling in EWCs is          2.77417124546768     
+   GDM::      : max rotation in step is        6.356586927599056E-007
+   GDM::        grad.step =  -5.926598664445041E-013
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   23    -196.9572191677      4.18E-07  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -2.557953848736361E-013
+   GDM::trust : predicted energy change was   -8.889897996667565E-013
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 12
+   GDM::PreWSS: working subspace size set to           12
+   GDM::PrEWSS: # of linearly dependent vectors =            1
+   GDM::PrEWSS: Max dev from orthonormality =   3.557965033706978E-010
+   GDM::BFGS:   lowest Hinv e-value    0.198181655636017     
+   GDM::BFGS:   highest Hinv e-value    1.81739358555864     
+   GDM::      : max scaling in EWCs is          2.77418055228544     
+   GDM::      : max rotation in step is       -2.253273879619086E-007
+   GDM::        grad.step =  -3.992504073228586E-013
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   24    -196.9572191677      3.21E-07  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -4.263256414560601E-013
+   GDM::trust : predicted energy change was   -5.988756109842876E-013
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 13
+   GDM::PreWSS: working subspace size set to           11
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   3.288955913172131E-010
+   GDM::BFGS:   lowest Hinv e-value    0.198320922416776     
+   GDM::BFGS:   highest Hinv e-value    1.47614125630924     
+   GDM::      : max scaling in EWCs is          2.77417482506970     
+   GDM::      : max rotation in step is        7.245280324228527E-008
+   GDM::        grad.step =  -5.695646442275807E-014
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   25    -196.9572191677      7.52E-08  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        1.989519660128281E-013
+   GDM::trust : predicted energy change was   -8.543469663413712E-014
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::WARNING energy changes are now smaller than effective accuracy.
+   GDM::        calculation will continue, but THRESH should be increased
+   GDM::        or SCF_CONVERGENCE decreased.
+   GDM::        effective_thresh =   3.557965033706978E-010
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 12
+   GDM::PreWSS: working subspace size set to           11
+   GDM::PrEWSS: # of linearly dependent vectors =            1
+   GDM::PrEWSS: Max dev from orthonormality =   8.318887245728490E-012
+   GDM::BFGS:   lowest Hinv e-value    0.198436001320631     
+   GDM::BFGS:   highest Hinv e-value    1.48876516004724     
+   GDM::      : max scaling in EWCs is          2.77417503573187     
+   GDM::      : max rotation in step is       -1.799589420157577E-008
+   GDM::        grad.step =  -1.945976165674748E-015
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   26    -196.9572191677      1.29E-08  Gap = 183.19 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.705302565824240E-013
+   GDM::trust : predicted energy change was   -2.918964248512124E-015
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 12
+   GDM::PreWSS: working subspace size set to            9
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   5.157513305320549E-012
+   GDM::BFGS:   lowest Hinv e-value    0.313541226121876     
+   GDM::BFGS:   highest Hinv e-value    1.74525769488514     
+   GDM::      : max scaling in EWCs is          2.77417515473683     
+   GDM::      : max rotation in step is       -1.278028339881405E-008
+   GDM::        grad.step =  -1.387599738743485E-016
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   27    -196.9572191677      4.83E-09 Convergence criterion met
+ ---------------------------------------
+ One-Electron    Energy =  -418.4385016698
+ Total Coulomb   Energy =   177.9913182984
+ Alpha Exchange  Energy =    -2.1761113229
+ Beta  Exchange  Energy =    -2.1761113229
+ DFT   Exchange  Energy =   -17.4747832151
+ DFT Correlation Energy =    -1.2282724132
+ Nuclear Repu.   Energy =    66.5452424777
+ Nuclear Attr.   Energy =  -591.8224987657
+ Kinetic         Energy =   173.3839970958
+ SCF time:  CPU 57.39 s  wall 6.10 s
+ SCF   energy in the final basis set = -196.9572191677
+ Total energy in the final basis set = -196.9572191677
+ 
+ --------------------------------------------------------------
+ 
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+-19.090 -19.090  -2.088  -1.307  -1.294  -1.294  -0.877  -0.785
+ -0.346  -0.340  -0.340  -0.267  -0.267  -0.207
+ -- Virtual --
+ -0.142  -0.142  -0.141  -0.017  -0.017   0.022   0.022   0.022
+  0.039   0.092   0.092   0.162   0.168   0.168   0.175   0.175
+  0.198   0.252   0.253   0.253   0.312   0.338   0.338   0.402
+  0.795   1.185   1.185   1.204   1.204   1.229   1.279   1.718
+  1.807   1.807   1.820   1.820   1.836   1.840   1.840   1.957
+  1.957   2.042   2.082  13.340
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 Zr                    1.343465
+      2 O                    -0.671736
+      3 O                    -0.671729
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 0.0000
+    Dipole Moment (Debye)
+         X       0.0000      Y       0.0000      Z      -0.0001
+       Tot       0.0001
+    Quadrupole Moments (Debye-Ang)
+        XX     -27.4034     XY       0.0000     YY     -27.4034
+        XZ       0.0000     YZ       0.0000     ZZ     -57.8487
+    Octopole Moments (Debye-Ang^2)
+       XXX       0.0000    XXY       0.0000    XYY       0.0000
+       YYY       0.0000    XXZ      -0.0002    XYZ       0.0000
+       YYZ      -0.0002    XZZ       0.0000    YZZ       0.0000
+       ZZZ      -0.0011
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX     -31.9881   XXXY       0.0000   XXYY     -10.6627
+      XYYY       0.0000   YYYY     -31.9881   XXXZ       0.0000
+      XXYZ       0.0000   XYYZ       0.0000   YYYZ       0.0000
+      XXZZ     -59.1047   XYZZ       0.0000   YYZZ     -59.1047
+      XZZZ       0.0000   YZZZ       0.0000   ZZZZ    -395.2603
+ -----------------------------------------------------------------
+Archival summary:
+1\1\hpc3461\SP\ProcedureUnspecified\BasisUnspecified\r12(\liqiuy\FriJan1720:03:182020FriJan1720:03:182020\0\\#,ProcedureUnspecified,BasisUnspecified,\\28,1\Zr\O,1,1.78127\O,1,1.78128,2,180\\\@
+
+ Total job time:  7.07s(wall), 63.28s(cpu) 
+ Fri Jan 17 20:03:19 2020
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+
+0 sent ACK to 0 
+now end server 0 ... 
+cleanup process ... done
+
+Running Job 2 of 2 ZrOx.in
+qchem ZrOx.in_18462.1 /tmp/5732865.priya/ZrOx.save/ 1
+/usr/usc/qchem/4.4/bin/mpi/mpirun_qchem -machinefile /usr/usc/qchem/4.4/bin/mpi/machines -np 1 /usr/usc/qchem/4.4/exe/qcprog.exe ZrOx.in_18462.1 /tmp/5732865.priya/ZrOx.save/
+
+Process 0 of 1 is on hpc3461.hpcc.usc.edu - thread support 0
+initial socket setup ...start
+initial socket setup ...done 
+now start server 0 ... 
+Check license passed
+
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 4.4, Q-Chem, Inc., Pleasanton, CA (2016)
+
+ Y. Shao,  Z. Gan,  E. Epifanovsky,  A. T. B. Gilbert,  M. Wormit,  
+ J. Kussmann,  A. W. Lange,  A. Behn,  J. Deng,  X. Feng,  D. Ghosh,  
+ M. Goldey,  P. R. Horn,  L. D. Jacobson,  I. Kaliman,  F.Rob,  
+ R. Z. Khaliullin,  T. Kus,  A. Landau,  J. Liu,  E. I. Proynov,  Y. M. Rhee,  
+ R. M. Richard,  M. A. Rohrdanz,  R. P. Steele,  E. J. Sundstrom,  
+ H. L. Woodcock III,  P. M. Zimmerman,  D. Zuev,  B. Albrecht,  E. Alguire,  
+ B. Austin,  S. A. Baeppler,  G. J. O. Beran,  Y. A. Bernard,  E. Berquist,  
+ K. Brandhorst,  K. B. Bravaya,  S. T. Brown,  D. Casanova,  C.-M. Chang,  
+ Y. Chen,  S. H. Chien,  K. D. Closser,  M. P. Coons,  D. L. Crittenden,  
+ S. Dasgupta,  M. Diedenhofen,  R. A. DiStasio Jr.,  H. Do,  A. D. Dutoi,  
+ R. G. Edgar,  P.-T. Fang,  S. Fatehi,  Q. Feng,  L. Fusti-Molnar,  
+ A. Ghysels,  A. Golubeva-Zadorozhnaya,  J. Gomes,  A. Gunina,  
+ M. W. D. Hanson-Heine,  P. H. P. Harbach,  A. W. Hauser,  E. G. Hohenstein,  
+ Z. C. Holden,  K. Hui,  T.-C. Jagau,  H. Ji,  B. Kaduk,  K. Khistyaev,  
+ Jaehoon Kim,  Jihan Kim,  R. A. King,  P. Klunzinger,  D. Kosenkov,  
+ T. Kowalczyk,  C. M. Krauter,  A. Kunitsa,  K. U. Lao,  A. Laurent,  
+ K. V. Lawler,  D. Lefrancois,  S. Lehtola,  S. V. Levchenko,  C. Y. Lin,  
+ Y.-S. Lin,  F. Liu,  E. Livshits,  R. C. Lochan,  A. Luenser,  P. Manohar,  
+ S. F. Manzer,  S.-P. Mao,  Y. Mao,  N. Mardirossian,  A. V. Marenich,  
+ L. A. Martinez-Martinez,  S. A. Maurer,  N. J. Mayhall,  J.-M. Mewes,  
+ A. F. Morrison,  K. Nanda,  C. M. Oana,  R. Olivares-Amaya,  D. P. O'Neill,  
+ J. A. Parkhill,  T. M. Perrine,  R. Peverati,  P. A. Pieniazek,  F. Plasser,  
+ A. Prociuk,  D. R. Rehn,  E. Rosta,  N. J. Russ,  N. Sergueev,  
+ S. M. Sharada,  S. Sharma,  D. W. Small,  A. Sodt,  T. Stauch,  T. Stein,  
+ D. Stuck,  Y.-C. Su,  A. J. W. Thom,  T. Tsuchimochi,  L. Vogt,  O. Vydrov,  
+ T. Wang,  M. A. Watson,  J. Wenzel,  A. White,  C. F. Williams,  
+ V. Vanovschi,  S. Yeganeh,  S. R. Yost,  Z.-Q. You,  I. Y. Zhang,  X. Zhang,  
+ Y. Zhao,  B. R. Brooks,  G. K. L. Chan,  D. M. Chipman,  C. J. Cramer,  
+ W. A. Goddard III,  M. S. Gordon,  W. J. Hehre,  A. Klamt,  
+ H. F. Schaefer III,  M. W. Schmidt,  C. D. Sherrill,  D. G. Truhlar,  
+ A. Warshel,  X. Xu,  A. Aspuru-Guzik,  R. Baer,  A. T. Bell,  N. A. Besley,  
+ J.-D. Chai,  A. Dreuw,  B. D. Dunietz,  T. R. Furlani,  S. R. Gwaltney,  
+ C.-P. Hsu,  Y. Jung,  J. Kong,  D. S. Lambrecht,  W. Liang,  C. Ochsenfeld,  
+ V. A. Rassolov,  L. V. Slipchenko,  J. E. Subotnik,  T. Van Voorhis,  
+ J. M. Herbert,  A. I. Krylov,  P. M. W. Gill,  M. Head-Gordon
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  J. Baker,  E. F. C. Byrd,  A. K. Chakraborty,  C.-L. Cheng,  
+ H. Dachsel,  R. J. Doerksen,  G. Hawkins,  A. Heyden,  S. Hirata,  
+ G. Kedziora,  F. J. Keil,  C. Kelley,  P. P. Korambath,  W. Kurlancheek,  
+ A. M. Lee,  M. S. Lee,  D. Liotard,  I. Lotan,  P. E. Maslen,  N. Nair,  
+ D. Neuhauser,  R. Olson,  B. Peters,  J. Ritchie,  N. E. Schultz,  
+ N. Shenvi,  A. C. Simmonett,  K. S. Thanthiriwatte,  Q. Wu,  W. Zhang
+
+ Please cite Q-Chem as follows:
+ Y. Shao et al., Mol. Phys. 113, 184-215 (2015)
+ DOI: 10.1080/00268976.2014.952696
+
+ Q-Chem 4.4.1 for Intel X86 Linux
+
+ Parts of Q-Chem use Armadillo 5.200.1 (Boston Tea Smuggler).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Fri Jan 17 20:03:22 2020  
+
+Host: 
+0
+
+     Scratch files written to /tmp/5732865.priya/ZrOx.save//
+ Jul2716 11668_ 21447  21445 5558   
+ Parallel job on  1  processors
+Processing $rem in /usr/usc/qchem/4.4/config/preferences.
+ MEM_TOTAL  2000 
+The previous job contains 0 fragments, simply inherited here
+
+Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+
+$comment
+-----------------------
+A GEOMETRY OPTIMIZATION
+-----------------------
+$end
+
+$molecule
+READ
+$end
+
+$rem
+JOBTYPE   OPT
+METHOD   B3LYP
+BASIS   GEN
+ECP   GEN
+SCF_GUESS   READ
+MAX_SCF_CYCLES   200
+SCF_CONVERGENCE 8
+SCF_PRINT 1
+PDB_PRINT 2
+THRESH 14
+VARTHRESH 14
+INCDFT FALSE
+SYMMETRY False
+Sym_ignore True
+SCF_ALGORITHM GDM
+XC_GRID 000128000302
+GEOM_OPT_MAX_CYCLES 200
+DFT_D           EMPIRICAL_GRIMME3
+DFT_D3_S6       1000
+DFT_D3_RS6     1261
+DFT_D3_S8      1703
+DFT_D3_3BODY    FALSE
+SCF_PRINT 1
+PDB_PRINT 2
+$end
+
+$basis
+O
+6-31+G**
+****
+S
+6-31+G**
+****
+Zr
+LanL2DZ
+****
+$end
+
+$ecp
+Zr
+LanL2DZ
+****
+$end
+
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      Zr      0.0000000000     0.0000000000     0.0000000000
+    2      O       0.0000000000     0.0000000000     1.7812800000
+    3      O       0.0000000000     0.0000000000    -1.7812700000
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =    66.5452424832 hartrees
+ There are       14 alpha and       14 beta electrons
+
+ Q-Chem warning in module /home/scratch/svnadmin/11668_zgan/qchem/forms1/BasisType.C, line 1419:
+
+ Setting pure/cartesian flag to 2111 for general basis
+
+
+ Requested basis set is non-standard
+ There are 18 shells and 58 basis functions
+
+ Total QAlloc Memory Limit   2000 MB
+ Mega-Array Size        61 MB
+ MEM_STATIC part        62 MB
+ A cutoff of  1.0D-14 yielded    168 shell pairs
+ There are      1787 function pairs (      2049 Cartesian)
+ 
+ -------------------------------------------------------
+ OpenMP Integral Computing Module                       
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ Integral Job Info:
+ Integral job number is                      11
+ Integral operator is                         1
+ short-range coefficients                     0
+ long-range coefficients              100000000
+ Omega coefficients                           0
+ if combine SR and LR in K                    0
+ Integral screening is                        0
+ Integral computing path is                   2
+ max size of driver memory is            800000
+ size of driver memory is                593474
+ size of scratch memory is             11771240
+ max col of scratch BK array               1296
+ max len of scratch array in speh3          155
+ max len of scratch index in speh4           18
+ max int batch size is                      520
+ min int batch size is                       52
+ fixed nKL is                                52
+ max L of basis functions is                  2
+ order of int derivative is                   0
+ number of shells is                         18
+ number of basis is                          62
+ number of cartesian basis is                62
+ number of contracted shell pairs           168
+ number of primitive shell pairs            851
+ maxK2 (contraction) of shell pair           36
+ max number of K2 of shell pair               1
+ max number of CS2 of shell pair             12
+ max number of PS2 of shell pair             72
+ mem total for path MDJ                   13288
+ -------------------------------------------------------
+ Requested basis set is non-standard
+ Compound shells will be simplified
+ There are 24 shells and 58 basis functions
+ A cutoff of  1.0D-14 yielded    295 shell pairs
+ There are      1769 function pairs (      2031 Cartesian)
+ Smallest overlap matrix eigenvalue = 9.52E-04
+
+ Scale SEOQF with 1.000000e-01/1.000000e-01/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =    -0.0000000054 hartrees
+ Guess MOs from SCF MO coefficient file
+ Reading MOs from coefficient file
+ Reading MOs from coefficient file
+ A restricted hybrid HF-DFT SCF calculation will be
+ performed using Geometric Direct Minimization
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (128,302) quadrature formula
+ Dispersion:   Grimme D3
+ SCF converges when RMS gradient is below 1.0E-08
+ Maximum number of minimization steps = 200
+ using 12 threads for integral computing 
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  1
+   GDM::PreWSS: working subspace size set to            1
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   0.000000000000000E+000
+   GDM::BFGS:   lowest Hinv e-value     1.00000000000000     
+   GDM::BFGS:   highest Hinv e-value    1.00000000000000     
+   GDM::      : max scaling in EWCs is          2.77417523981104     
+   GDM::      : max rotation in step is       -6.304474395854356E-009
+   GDM::        grad.step =  -1.065112573811454E-016
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -196.9572191677      5.36E-09  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        1.705302565824240E-013
+   GDM::trust : predicted energy change was   -1.597668860717181E-016
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::WARNING energy changes are now smaller than effective accuracy.
+   GDM::        calculation will continue, but THRESH should be increased
+   GDM::        or SCF_CONVERGENCE decreased.
+   GDM::        effective_thresh =   1.400000000000000E-010
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  2
+   GDM::PreWSS: working subspace size set to            2
+   GDM::PrEWSS: # of linearly dependent vectors =            1
+   GDM::PrEWSS: Max dev from orthonormality =   6.036837696399289E-016
+   GDM::BFGS:   lowest Hinv e-value    0.260969293041062     
+   GDM::BFGS:   highest Hinv e-value    1.30716591369155     
+   GDM::      : max scaling in EWCs is          2.77417502945128     
+   GDM::      : max rotation in step is       -6.169400129851083E-009
+   GDM::        grad.step =  -1.597208294217295E-016
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    2    -196.9572191677      1.08E-08  Gap = 93.59 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        1.705302565824240E-013
+   GDM::trust : predicted energy change was   -2.395812441325943E-016
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::WARNING energy changes are now smaller than effective accuracy.
+   GDM::        calculation will continue, but THRESH should be increased
+   GDM::        or SCF_CONVERGENCE decreased.
+   GDM::        effective_thresh =   1.400000000000000E-010
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  3
+   GDM::PreWSS: working subspace size set to            3
+   GDM::PrEWSS: # of linearly dependent vectors =            2
+   GDM::PrEWSS: Max dev from orthonormality =   6.730727086790012E-016
+   GDM::BFGS:   lowest Hinv e-value    0.239061644512081     
+   GDM::BFGS:   highest Hinv e-value    1.27469629875177     
+   GDM::      : max scaling in EWCs is          2.77417517123717     
+   GDM::      : max rotation in step is        2.794281496736818E-009
+   GDM::        grad.step =  -2.879461935526189E-017
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    3    -196.9572191677      2.69E-09 Convergence criterion met
+ ---------------------------------------
+ One-Electron    Energy =  -418.4385016404
+ Total Coulomb   Energy =   177.9913182654
+ Alpha Exchange  Energy =    -2.1761113226
+ Beta  Exchange  Energy =    -2.1761113226
+ DFT   Exchange  Energy =   -17.4747832123
+ DFT Correlation Energy =    -1.2282724130
+ Nuclear Repu.   Energy =    66.5452424777
+ Nuclear Attr.   Energy =  -591.8224987160
+ Kinetic         Energy =   173.3839970757
+ SCF time:  CPU 9.43 s  wall 1.72 s
+ SCF   energy in the final basis set = -196.9572191677
+ Total energy in the final basis set = -196.9572191677
+ 
+ --------------------------------------------------------------
+ 
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+-19.090 -19.090  -2.088  -1.307  -1.294  -1.294  -0.877  -0.785
+ -0.346  -0.340  -0.340  -0.267  -0.267  -0.207
+ -- Virtual --
+ -0.142  -0.142  -0.141  -0.017  -0.017   0.022   0.022   0.022
+  0.039   0.092   0.092   0.162   0.168   0.168   0.175   0.175
+  0.198   0.252   0.253   0.253   0.312   0.338   0.338   0.402
+  0.795   1.185   1.185   1.204   1.204   1.229   1.279   1.718
+  1.807   1.807   1.820   1.820   1.836   1.840   1.840   1.957
+  1.957   2.042   2.082  13.340
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 Zr                    1.343465
+      2 O                    -0.671736
+      3 O                    -0.671729
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 0.0000
+    Dipole Moment (Debye)
+         X       0.0000      Y       0.0000      Z      -0.0001
+       Tot       0.0001
+    Quadrupole Moments (Debye-Ang)
+        XX     -27.4034     XY       0.0000     YY     -27.4034
+        XZ       0.0000     YZ       0.0000     ZZ     -57.8487
+    Octopole Moments (Debye-Ang^2)
+       XXX       0.0000    XXY       0.0000    XYY       0.0000
+       YYY       0.0000    XXZ      -0.0002    XYZ       0.0000
+       YYZ      -0.0002    XZZ       0.0000    YZZ       0.0000
+       ZZZ      -0.0011
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX     -31.9881   XXXY       0.0000   XXYY     -10.6627
+      XYYY       0.0000   YYYY     -31.9881   XXXZ       0.0000
+      XXYZ       0.0000   XYYZ       0.0000   YYYZ       0.0000
+      XXZZ     -59.1047   XYZZ       0.0000   YYZZ     -59.1047
+      XZZZ       0.0000   YZZZ       0.0000   ZZZZ    -395.2603
+ -----------------------------------------------------------------
+ Calculating analytic gradient of the SCF energy
+ Gradient of SCF Energy
+            1           2           3
+    1  -0.0000000   0.0000000  -0.0000000
+    2  -0.0000000  -0.0000000   0.0000000
+    3  -0.0000070  -0.0906593   0.0906662
+ Max gradient component =       9.067E-02
+ RMS gradient           =       4.274E-02
+ Gradient time:  CPU 5.36 s  wall 1.34 s
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        3       9       0       0       0       0       0       0
+
+
+** GEOMETRY OPTIMIZATION IN DELOCALIZED INTERNAL COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   1
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  Zr        0.0000000000    0.0000000000    0.0000000000
+      2  O         0.0000000000    0.0000000000    1.7812800000
+      3  O         0.0000000000    0.0000000000   -1.7812700000
+   Point Group: c1    Number of degrees of freedom:     3
+
+
+   Energy is   -196.957219168
+
+
+ Attempting to Generate Delocalized Internal Coordinates
+
+  ***ERROR*** Angle     2    1    3   is near-linear
+              But No atom available to define colinear bend
+**WARNING** Problems with Internal Coordinates
+  Switching to Cartesian Coordinates
+
+ Translations and Rotations Projected Out of Hessian
+
+  3 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     1.000000    1.000000    1.000000
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.01617782
+ Step Taken.  Stepsize is  0.126175
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.090666      0.000300      NO
+         Displacement       0.089223      0.001200      NO
+         Energy change     *********      0.000001      NO
+
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      Zr      0.0000000000     0.0000000000     0.0000036319
+    2      O       0.0000000000     0.0000000000     1.8284910501
+    3      O       0.0000000000     0.0000000000    -1.8284846821
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =    64.8270087924 hartrees
+ There are       14 alpha and       14 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =    -0.0000000057 hartrees
+ Requested basis set is non-standard
+ There are 18 shells and 58 basis functions
+ A cutoff of  1.0D-14 yielded    166 shell pairs
+ There are      1777 function pairs (      2037 Cartesian)
+ Requested basis set is non-standard
+ Compound shells will be simplified
+ There are 24 shells and 58 basis functions
+ A cutoff of  1.0D-14 yielded    293 shell pairs
+ There are      1759 function pairs (      2019 Cartesian)
+ Smallest overlap matrix eigenvalue = 1.08E-03
+ Guess MOs from SCF MO coefficient file
+ Reading MOs from coefficient file
+ Reading MOs from coefficient file
+ A restricted hybrid HF-DFT SCF calculation will be
+ performed using Geometric Direct Minimization
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (128,302) quadrature formula
+ Dispersion:   Grimme D3
+ SCF converges when RMS gradient is below 1.0E-08
+ Maximum number of minimization steps = 200
+ Geometry optimization detected.  Setting ReadMinima to 0
+ Setting SaveMinima to 0
+ using 12 threads for integral computing 
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  1
+   GDM::PreWSS: working subspace size set to            1
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   2.220446049250313E-016
+   GDM::BFGS:   lowest Hinv e-value     1.00000000000000     
+   GDM::BFGS:   highest Hinv e-value    1.00000000000000     
+   GDM::      : max scaling in EWCs is          2.82842712474619     
+   GDM::      : max rotation in step is        1.128965296315343E-002
+   GDM::        grad.step =  -1.466618152136956E-003
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -196.9674013159      1.03E-02  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -3.361672750941125E-004
+   GDM::trust : predicted energy change was   -2.199927228205434E-003
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  2
+   GDM::PreWSS: working subspace size set to            2
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   3.467712228477637E-014
+   GDM::BFGS:   lowest Hinv e-value    0.326168854741722     
+   GDM::BFGS:   highest Hinv e-value    1.74991566004411     
+   GDM::      : max scaling in EWCs is          2.43452299901467     
+   GDM::      : max rotation in step is        1.622066638415511E-002
+   GDM::        grad.step =  -1.221905466591649E-003
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    2    -196.9677374831      2.29E-02  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -3.720444226473774E-004
+   GDM::trust : predicted energy change was   -1.832858199887473E-003
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  3
+   GDM::PreWSS: working subspace size set to            3
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   2.528227627252022E-012
+   GDM::BFGS:   lowest Hinv e-value    0.256786786994619     
+   GDM::BFGS:   highest Hinv e-value    1.28825250994444     
+   GDM::      : max scaling in EWCs is          2.82842712474619     
+   GDM::      : max rotation in step is       -8.763730654119945E-003
+   GDM::        grad.step =  -5.501391261758086E-004
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    3    -196.9681095276      1.65E-02  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -4.382808548371031E-004
+   GDM::trust : predicted energy change was   -8.252086892637129E-004
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  4
+   GDM::PreWSS: working subspace size set to            4
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   3.210100241179958E-011
+   GDM::BFGS:   lowest Hinv e-value    0.288132856043834     
+   GDM::BFGS:   highest Hinv e-value    1.32790328224380     
+   GDM::      : max scaling in EWCs is          2.72331274229252     
+   GDM::      : max rotation in step is        1.785190840164604E-003
+   GDM::        grad.step =  -5.711519890294252E-005
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    4    -196.9685478084      2.46E-03  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -3.982997279194933E-005
+   GDM::trust : predicted energy change was   -8.567279835441379E-005
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  5
+   GDM::PreWSS: working subspace size set to            5
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   2.494998652124991E-011
+   GDM::BFGS:   lowest Hinv e-value    0.279215061523417     
+   GDM::BFGS:   highest Hinv e-value    1.32552356137845     
+   GDM::      : max scaling in EWCs is          2.71054966287576     
+   GDM::      : max rotation in step is        6.089941770435307E-004
+   GDM::        grad.step =  -6.149314399983921E-006
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    5    -196.9685876384      9.23E-04  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -5.667296562705815E-006
+   GDM::trust : predicted energy change was   -9.223971599975880E-006
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  6
+   GDM::PreWSS: working subspace size set to            6
+   GDM::PrEWSS: # of linearly dependent vectors =            1
+   GDM::PrEWSS: Max dev from orthonormality =   3.572145357289003E-011
+   GDM::BFGS:   lowest Hinv e-value    0.281184852438653     
+   GDM::BFGS:   highest Hinv e-value    1.24046807838712     
+   GDM::      : max scaling in EWCs is          2.71952878037301     
+   GDM::      : max rotation in step is       -1.928833464169494E-004
+   GDM::        grad.step =  -1.554372783962006E-007
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    6    -196.9685933057      1.16E-04  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        3.754826138901990E-008
+   GDM::trust : predicted energy change was   -2.331559175943009E-007
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::search:  On step            1 .  The current bracket is:
+       left   : x =  0.0000E+00, e =      -196.9685933057, g = -0.3982E-03
+       current: x =  0.3903E-03, e =      -196.9685932681, g =  0.4944E-03
+       right  : x =  0.1000E+04, e =      1000.0000000000, g =  0.1000E+04
+       next   : x =  0.1572E-03
+   GDM::      : max rotation in step is       -7.767748414821449E-005
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    7    -196.9685932681      3.51E-05  Gap = -47.13 eV  Line search: overstep
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -6.868609148114047E-008
+   GDM::trust : predicted energy change was   -2.331559175943009E-007
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  7
+   GDM::PreWSS: working subspace size set to            7
+   GDM::PrEWSS: # of linearly dependent vectors =            2
+   GDM::PrEWSS: Max dev from orthonormality =   1.158997064987233E-010
+   GDM::BFGS:   lowest Hinv e-value    0.236473712407057     
+   GDM::BFGS:   highest Hinv e-value    2.06699633407847     
+   GDM::      : max scaling in EWCs is          2.71972859587174     
+   GDM::      : max rotation in step is       -1.402881600939681E-004
+   GDM::        grad.step =  -1.015106767164746E-007
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    8    -196.9685933744      1.06E-04  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        6.630881443925318E-008
+   GDM::trust : predicted energy change was   -1.522660150747118E-007
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::search:  On step            1 .  The current bracket is:
+       left   : x =  0.0000E+00, e =      -196.9685933744, g = -0.2857E-03
+       current: x =  0.3553E-03, e =      -196.9685933081, g =  0.4723E-03
+       right  : x =  0.1000E+04, e =      1000.0000000000, g =  0.1000E+04
+       next   : x =  0.1075E-03
+   GDM::      : max rotation in step is       -4.242876071300070E-005
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    9    -196.9685933081      3.97E-05  Gap = -47.13 eV  Line search: overstep
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -3.676595383694803E-008
+   GDM::trust : predicted energy change was   -1.522660150747118E-007
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  8
+   GDM::PreWSS: working subspace size set to            8
+   GDM::PrEWSS: # of linearly dependent vectors =            3
+   GDM::PrEWSS: Max dev from orthonormality =   1.866469478972732E-011
+   GDM::BFGS:   lowest Hinv e-value    0.191707432851070     
+   GDM::BFGS:   highest Hinv e-value    1.20532400730763     
+   GDM::      : max scaling in EWCs is          2.71981382621365     
+   GDM::      : max rotation in step is       -1.455736216125261E-005
+   GDM::        grad.step =  -2.609264519986926E-009
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   10    -196.9685934111      1.87E-05  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -2.514497055017273E-009
+   GDM::trust : predicted energy change was   -3.913896779980388E-009
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  9
+   GDM::PreWSS: working subspace size set to            9
+   GDM::PrEWSS: # of linearly dependent vectors =            4
+   GDM::PrEWSS: Max dev from orthonormality =   1.644342995099635E-010
+   GDM::BFGS:   lowest Hinv e-value    0.192156126873643     
+   GDM::BFGS:   highest Hinv e-value    1.14709191474578     
+   GDM::      : max scaling in EWCs is          2.71959626173707     
+   GDM::      : max rotation in step is        2.855166024059860E-006
+   GDM::        grad.step =  -1.863318046551718E-011
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   11    -196.9685934136      2.41E-06  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.753619471855927E-011
+   GDM::trust : predicted energy change was   -2.794977069827577E-011
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 10
+   GDM::PreWSS: working subspace size set to           10
+   GDM::PrEWSS: # of linearly dependent vectors =            5
+   GDM::PrEWSS: Max dev from orthonormality =   1.087576695368853E-010
+   GDM::BFGS:   lowest Hinv e-value    0.191721175983516     
+   GDM::BFGS:   highest Hinv e-value    1.18623819455862     
+   GDM::      : max scaling in EWCs is          2.71962564200857     
+   GDM::      : max rotation in step is        6.099356510911352E-007
+   GDM::        grad.step =  -4.485293373014343E-013
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   12    -196.9685934137      3.38E-07  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -6.821210263296962E-013
+   GDM::trust : predicted energy change was   -6.727940059521516E-013
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 11
+   GDM::PreWSS: working subspace size set to            8
+   GDM::PrEWSS: # of linearly dependent vectors =            4
+   GDM::PrEWSS: Max dev from orthonormality =   2.892616701721806E-012
+   GDM::BFGS:   lowest Hinv e-value    0.191589662538379     
+   GDM::BFGS:   highest Hinv e-value    1.84384502671596     
+   GDM::      : max scaling in EWCs is          2.71962474384274     
+   GDM::      : max rotation in step is        1.440812719534137E-007
+   GDM::        grad.step =  -1.552547861980053E-014
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   13    -196.9685934137      6.38E-08  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -5.684341886080801E-014
+   GDM::trust : predicted energy change was   -2.328821792970079E-014
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  9
+   GDM::PreWSS: working subspace size set to            9
+   GDM::PrEWSS: # of linearly dependent vectors =            5
+   GDM::PrEWSS: Max dev from orthonormality =   1.043928832267227E-012
+   GDM::BFGS:   lowest Hinv e-value    0.191662660390437     
+   GDM::BFGS:   highest Hinv e-value    2.03153759906379     
+   GDM::      : max scaling in EWCs is          2.71962334102053     
+   GDM::      : max rotation in step is        7.457278941039316E-008
+   GDM::        grad.step =  -9.137792174297026E-015
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   14    -196.9685934137      6.64E-08  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        1.989519660128281E-013
+   GDM::trust : predicted energy change was   -1.370668826144554E-014
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::WARNING energy changes are now smaller than effective accuracy.
+   GDM::        calculation will continue, but THRESH should be increased
+   GDM::        or SCF_CONVERGENCE decreased.
+   GDM::        effective_thresh =   1.644342995099635E-010
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 10
+   GDM::PreWSS: working subspace size set to            9
+   GDM::PrEWSS: # of linearly dependent vectors =            4
+   GDM::PrEWSS: Max dev from orthonormality =   1.949160138847716E-010
+   GDM::BFGS:   lowest Hinv e-value    0.191911334254010     
+   GDM::BFGS:   highest Hinv e-value    1.50617269469087     
+   GDM::      : max scaling in EWCs is          2.71962432679815     
+   GDM::      : max rotation in step is       -6.620905328299880E-008
+   GDM::        grad.step =  -3.637661275068888E-015
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   15    -196.9685934137      4.03E-08  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -2.842170943040401E-014
+   GDM::trust : predicted energy change was   -5.456491912603333E-015
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 10
+   GDM::PreWSS: working subspace size set to            9
+   GDM::PrEWSS: # of linearly dependent vectors =            3
+   GDM::PrEWSS: Max dev from orthonormality =   4.045003360042543E-010
+   GDM::BFGS:   lowest Hinv e-value    0.192344313462772     
+   GDM::BFGS:   highest Hinv e-value    1.54375101398299     
+   GDM::      : max scaling in EWCs is          2.71962409281224     
+   GDM::      : max rotation in step is       -9.720041306293715E-009
+   GDM::        grad.step =  -2.639438171140167E-017
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   16    -196.9685934137      3.49E-09 Convergence criterion met
+ ---------------------------------------
+ One-Electron    Energy =  -414.9733728028
+ Total Coulomb   Energy =   176.1744207224
+ Alpha Exchange  Energy =    -2.1697985677
+ Beta  Exchange  Energy =    -2.1697985677
+ DFT   Exchange  Energy =   -17.4320846005
+ DFT Correlation Energy =    -1.2249683841
+ Nuclear Repu.   Energy =    64.8270087867
+ Nuclear Attr.   Energy =  -588.0478538344
+ Kinetic         Energy =   173.0744810316
+ SCF time:  CPU 35.85 s  wall 3.42 s
+ SCF   energy in the final basis set = -196.9685934137
+ Total energy in the final basis set = -196.9685934137
+ 
+ --------------------------------------------------------------
+ 
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+-19.097 -19.097  -2.099  -1.306  -1.306  -1.304  -0.872  -0.796
+ -0.343  -0.333  -0.333  -0.265  -0.265  -0.218
+ -- Virtual --
+ -0.150  -0.150  -0.147  -0.020  -0.020   0.002   0.002   0.022
+  0.036   0.090   0.090   0.161   0.164   0.164   0.175   0.175
+  0.196   0.252   0.252   0.252   0.295   0.334   0.334   0.378
+  0.785   1.183   1.183   1.201   1.201   1.237   1.274   1.719
+  1.814   1.814   1.825   1.825   1.825   1.843   1.843   1.942
+  1.942   1.995   2.064  12.130
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 Zr                    1.389535
+      2 O                    -0.694767
+      3 O                    -0.694768
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 0.0000
+    Dipole Moment (Debye)
+         X       0.0000      Y       0.0000      Z       0.0000
+       Tot       0.0000
+    Quadrupole Moments (Debye-Ang)
+        XX     -27.5852     XY       0.0000     YY     -27.5852
+        XZ       0.0000     YZ       0.0000     ZZ     -59.0288
+    Octopole Moments (Debye-Ang^2)
+       XXX       0.0000    XXY       0.0000    XYY       0.0000
+       YYY       0.0000    XXZ      -0.0001    XYZ       0.0000
+       YYZ      -0.0001    XZZ       0.0000    YZZ       0.0000
+       ZZZ      -0.0005
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX     -32.5345   XXXY       0.0000   XXYY     -10.8448
+      XYYY       0.0000   YYYY     -32.5345   XXXZ       0.0000
+      XXYZ       0.0000   XYYZ       0.0000   YYYZ       0.0000
+      XXZZ     -61.6533   XYZZ       0.0000   YYZZ     -61.6533
+      XZZZ       0.0000   YZZZ       0.0000   ZZZZ    -416.7849
+ -----------------------------------------------------------------
+ Calculating analytic gradient of the SCF energy
+ Gradient of SCF Energy
+            1           2           3
+    1   0.0000000  -0.0000000  -0.0000000
+    2   0.0000000   0.0000000  -0.0000000
+    3   0.0000005  -0.0386209   0.0386204
+ Max gradient component =       3.862E-02
+ RMS gradient           =       1.821E-02
+ Gradient time:  CPU 6.99 s  wall 1.14 s
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        3       9       0       0       0       0       0       0
+
+ Cartesian Hessian Update
+ Hessian Updated using BFGS Update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   2
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  Zr        0.0000000000    0.0000000000    0.0000036319
+      2  O         0.0000000000    0.0000000000    1.8284910501
+      3  O         0.0000000000    0.0000000000   -1.8284846821
+   Point Group: c1    Number of degrees of freedom:     3
+
+
+   Energy is   -196.968593414
+
+
+ Translations and Rotations Projected Out of Hessian
+
+  2 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.583305    1.000000
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.00506971
+ Step Taken.  Stepsize is  0.092828
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.038621      0.000300      NO
+         Displacement       0.065640      0.001200      NO
+         Energy change     -0.011374      0.000001      NO
+
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      Zr      0.0000000000     0.0000000000     0.0000031107
+    2      O       0.0000000000     0.0000000000     1.8632263024
+    3      O       0.0000000000     0.0000000000    -1.8632194131
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =    63.6184842826 hartrees
+ There are       14 alpha and       14 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =    -0.0000000060 hartrees
+ Requested basis set is non-standard
+ There are 18 shells and 58 basis functions
+ A cutoff of  1.0D-14 yielded    166 shell pairs
+ There are      1777 function pairs (      2037 Cartesian)
+ Requested basis set is non-standard
+ Compound shells will be simplified
+ There are 24 shells and 58 basis functions
+ A cutoff of  1.0D-14 yielded    293 shell pairs
+ There are      1759 function pairs (      2019 Cartesian)
+ Smallest overlap matrix eigenvalue = 1.19E-03
+ Guess MOs from SCF MO coefficient file
+ Reading MOs from coefficient file
+ Reading MOs from coefficient file
+ A restricted hybrid HF-DFT SCF calculation will be
+ performed using Geometric Direct Minimization
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (128,302) quadrature formula
+ Dispersion:   Grimme D3
+ SCF converges when RMS gradient is below 1.0E-08
+ Maximum number of minimization steps = 200
+ Geometry optimization detected.  Setting ReadMinima to 0
+ Setting SaveMinima to 0
+ using 12 threads for integral computing 
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  1
+   GDM::PreWSS: working subspace size set to            1
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   0.000000000000000E+000
+   GDM::BFGS:   lowest Hinv e-value     1.00000000000000     
+   GDM::BFGS:   highest Hinv e-value    1.00000000000000     
+   GDM::      : max scaling in EWCs is          2.79428571612894     
+   GDM::      : max rotation in step is       -8.102509525831967E-003
+   GDM::        grad.step =  -7.043162838474748E-004
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -196.9709731085      7.09E-03  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -3.981541425446267E-005
+   GDM::trust : predicted energy change was   -1.056474425771212E-003
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  2
+   GDM::PreWSS: working subspace size set to            2
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   4.299338662860919E-014
+   GDM::BFGS:   lowest Hinv e-value    0.302595058410344     
+   GDM::BFGS:   highest Hinv e-value    1.71418420868364     
+   GDM::      : max scaling in EWCs is          2.47337983419077     
+   GDM::      : max rotation in step is       -1.153717751567305E-002
+   GDM::        grad.step =  -6.701153486673769E-004
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    2    -196.9710129239      1.86E-02  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -2.932879442028025E-004
+   GDM::trust : predicted energy change was   -1.005173023001065E-003
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  3
+   GDM::PreWSS: working subspace size set to            3
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   1.068325983233365E-012
+   GDM::BFGS:   lowest Hinv e-value    0.248655708237163     
+   GDM::BFGS:   highest Hinv e-value    1.31205798341511     
+   GDM::      : max scaling in EWCs is          2.82842712474619     
+   GDM::      : max rotation in step is        6.269907090864336E-003
+   GDM::        grad.step =  -2.524824582279441E-004
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    3    -196.9713062118      1.09E-02  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.795935267807636E-004
+   GDM::trust : predicted energy change was   -3.787236873419161E-004
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  4
+   GDM::PreWSS: working subspace size set to            4
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   5.929608193344649E-011
+   GDM::BFGS:   lowest Hinv e-value    0.281731384969782     
+   GDM::BFGS:   highest Hinv e-value    1.32858400020809     
+   GDM::      : max scaling in EWCs is          2.70594819571008     
+   GDM::      : max rotation in step is       -1.403399277742363E-003
+   GDM::        grad.step =  -3.574059875922137E-005
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    4    -196.9714858054      2.07E-03  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -2.819406961407367E-005
+   GDM::trust : predicted energy change was   -5.361089813883206E-005
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  5
+   GDM::PreWSS: working subspace size set to            5
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   2.045697777841582E-010
+   GDM::BFGS:   lowest Hinv e-value    0.272391356993459     
+   GDM::BFGS:   highest Hinv e-value    1.34801232629627     
+   GDM::      : max scaling in EWCs is          2.69538411645411     
+   GDM::      : max rotation in step is        3.661182755888586E-004
+   GDM::        grad.step =  -2.550041443931584E-006
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    5    -196.9715139994      6.22E-04  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -2.239064457398854E-006
+   GDM::trust : predicted energy change was   -3.825062165897377E-006
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  6
+   GDM::PreWSS: working subspace size set to            6
+   GDM::PrEWSS: # of linearly dependent vectors =            1
+   GDM::PrEWSS: Max dev from orthonormality =   3.913405710598283E-010
+   GDM::BFGS:   lowest Hinv e-value    0.273774822252023     
+   GDM::BFGS:   highest Hinv e-value    1.22055535521325     
+   GDM::      : max scaling in EWCs is          2.70247983512835     
+   GDM::      : max rotation in step is       -7.868569240763289E-005
+   GDM::        grad.step =  -7.863189636302665E-008
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    6    -196.9715162385      1.01E-04  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -6.610409286622598E-008
+   GDM::trust : predicted energy change was   -1.179478445445400E-007
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  7
+   GDM::PreWSS: working subspace size set to            7
+   GDM::PrEWSS: # of linearly dependent vectors =            2
+   GDM::PrEWSS: Max dev from orthonormality =   1.378690356323986E-010
+   GDM::BFGS:   lowest Hinv e-value    0.277752584450271     
+   GDM::BFGS:   highest Hinv e-value    1.50789701507565     
+   GDM::      : max scaling in EWCs is          2.70256513805684     
+   GDM::      : max rotation in step is        9.158527475373442E-005
+   GDM::        grad.step =  -1.442064099857066E-008
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    7    -196.9715163046      6.63E-05  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        3.416832328184682E-008
+   GDM::trust : predicted energy change was   -2.163096149785598E-008
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::search:  On step            1 .  The current bracket is:
+       left   : x =  0.0000E+00, e =      -196.9715163046, g = -0.9192E-04
+       current: x =  0.1569E-03, e =      -196.9715162704, g =  0.3097E-03
+       right  : x =  0.1000E+04, e =      1000.0000000000, g =  0.1000E+04
+       next   : x =  0.2328E-04
+   GDM::      : max rotation in step is        1.359072360914001E-005
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    8    -196.9715162704      1.45E-05  Gap = -47.13 eV  Line search: overstep
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -2.892420525313355E-009
+   GDM::trust : predicted energy change was   -2.163096149785598E-008
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  8
+   GDM::PreWSS: working subspace size set to            8
+   GDM::PrEWSS: # of linearly dependent vectors =            3
+   GDM::PrEWSS: Max dev from orthonormality =   3.375357215951169E-010
+   GDM::BFGS:   lowest Hinv e-value    0.187277247478501     
+   GDM::BFGS:   highest Hinv e-value    1.22251170785111     
+   GDM::      : max scaling in EWCs is          2.70252316587954     
+   GDM::      : max rotation in step is       -1.746285306468729E-005
+   GDM::        grad.step =  -2.306731161163954E-009
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    9    -196.9715163075      2.29E-05  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.893397438834654E-009
+   GDM::trust : predicted energy change was   -3.460096741745931E-009
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  9
+   GDM::PreWSS: working subspace size set to            9
+   GDM::PrEWSS: # of linearly dependent vectors =            4
+   GDM::PrEWSS: Max dev from orthonormality =   2.042110369693262E-010
+   GDM::BFGS:   lowest Hinv e-value    0.193126758451499     
+   GDM::BFGS:   highest Hinv e-value    1.23574226649559     
+   GDM::      : max scaling in EWCs is          2.70223627073422     
+   GDM::      : max rotation in step is        1.671337124113962E-006
+   GDM::        grad.step =  -8.682655687185296E-011
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   10    -196.9715163094      4.83E-06  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -8.489564606861677E-011
+   GDM::trust : predicted energy change was   -1.302398353077795E-010
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 10
+   GDM::PreWSS: working subspace size set to           10
+   GDM::PrEWSS: # of linearly dependent vectors =            5
+   GDM::PrEWSS: Max dev from orthonormality =   1.372247072917165E-010
+   GDM::BFGS:   lowest Hinv e-value    0.192693580761698     
+   GDM::BFGS:   highest Hinv e-value    1.24073185666711     
+   GDM::      : max scaling in EWCs is          2.70230454939297     
+   GDM::      : max rotation in step is       -3.665188247189816E-007
+   GDM::        grad.step =  -5.043539576612440E-013
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   11    -196.9715163095      3.23E-07  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -7.958078640513122E-013
+   GDM::trust : predicted energy change was   -7.565309364918659E-013
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 11
+   GDM::PreWSS: working subspace size set to            8
+   GDM::PrEWSS: # of linearly dependent vectors =            4
+   GDM::PrEWSS: Max dev from orthonormality =   3.423536454327802E-011
+   GDM::BFGS:   lowest Hinv e-value    0.190015373269666     
+   GDM::BFGS:   highest Hinv e-value    1.70866869628900     
+   GDM::      : max scaling in EWCs is          2.70230224894396     
+   GDM::      : max rotation in step is       -1.585163582969013E-007
+   GDM::        grad.step =  -1.532520782669533E-014
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   12    -196.9715163095      8.21E-08  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        1.705302565824240E-013
+   GDM::trust : predicted energy change was   -2.298781174004300E-014
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::WARNING energy changes are now smaller than effective accuracy.
+   GDM::        calculation will continue, but THRESH should be increased
+   GDM::        or SCF_CONVERGENCE decreased.
+   GDM::        effective_thresh =   3.913405710598283E-010
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  9
+   GDM::PreWSS: working subspace size set to            7
+   GDM::PrEWSS: # of linearly dependent vectors =            2
+   GDM::PrEWSS: Max dev from orthonormality =   2.934137655064006E-011
+   GDM::BFGS:   lowest Hinv e-value    0.195271217947721     
+   GDM::BFGS:   highest Hinv e-value    1.81071769178344     
+   GDM::      : max scaling in EWCs is          2.70230202742078     
+   GDM::      : max rotation in step is       -3.529698527236272E-008
+   GDM::        grad.step =  -4.730288565757503E-016
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   13    -196.9715163095      1.59E-08  Gap = -47.13 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -3.126388037344441E-013
+   GDM::trust : predicted energy change was   -7.095432848636258E-016
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  8
+   GDM::PreWSS: working subspace size set to            8
+   GDM::PrEWSS: # of linearly dependent vectors =            3
+   GDM::PrEWSS: Max dev from orthonormality =   5.173207556774528E-010
+   GDM::BFGS:   lowest Hinv e-value    0.195031840307539     
+   GDM::BFGS:   highest Hinv e-value    1.76579122691942     
+   GDM::      : max scaling in EWCs is          2.70230208741309     
+   GDM::      : max rotation in step is       -2.932456885339908E-009
+   GDM::        grad.step =  -4.739423322635110E-017
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   14    -196.9715163095      3.15E-09 Convergence criterion met
+ ---------------------------------------
+ One-Electron    Energy =  -412.5254085484
+ Total Coulomb   Energy =   174.8917112866
+ Alpha Exchange  Energy =    -2.1653791424
+ Beta  Exchange  Energy =    -2.1653791424
+ DFT   Exchange  Energy =   -17.4029034279
+ DFT Correlation Energy =    -1.2226416116
+ Nuclear Repu.   Energy =    63.6184842767
+ Nuclear Attr.   Energy =  -585.3990442868
+ Kinetic         Energy =   172.8736357384
+ SCF time:  CPU 32.71 s  wall 2.88 s
+ SCF   energy in the final basis set = -196.9715163095
+ Total energy in the final basis set = -196.9715163095
+ 
+ --------------------------------------------------------------
+ 
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+-19.102 -19.102  -2.107  -1.314  -1.314  -1.304  -0.869  -0.803
+ -0.341  -0.328  -0.328  -0.263  -0.263  -0.224
+ -- Virtual --
+ -0.156  -0.156  -0.152  -0.022  -0.022  -0.012  -0.012   0.021
+  0.034   0.088   0.088   0.159   0.161   0.161   0.175   0.175
+  0.194   0.251   0.251   0.251   0.280   0.331   0.331   0.366
+  0.773   1.183   1.183   1.199   1.199   1.243   1.269   1.718
+  1.818   1.819   1.819   1.828   1.828   1.845   1.845   1.933
+  1.933   1.962   2.049  11.281
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 Zr                    1.422345
+      2 O                    -0.711173
+      3 O                    -0.711172
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 0.0000
+    Dipole Moment (Debye)
+         X       0.0000      Y       0.0000      Z       0.0000
+       Tot       0.0000
+    Quadrupole Moments (Debye-Ang)
+        XX     -27.7164     XY       0.0000     YY     -27.7164
+        XZ       0.0000     YZ       0.0000     ZZ     -59.9174
+    Octopole Moments (Debye-Ang^2)
+       XXX       0.0000    XXY       0.0000    XYY       0.0000
+       YYY       0.0000    XXZ      -0.0001    XYZ       0.0000
+       YYZ      -0.0001    XZZ       0.0000    YZZ       0.0000
+       ZZZ      -0.0006
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX     -32.9596   XXXY       0.0000   XXYY     -10.9865
+      XYYY       0.0000   YYYY     -32.9596   XXXZ       0.0000
+      XXYZ       0.0000   XYYZ       0.0000   YYYZ       0.0000
+      XXZZ     -63.6296   XYZZ       0.0000   YYZZ     -63.6296
+      XZZZ       0.0000   YZZZ       0.0000   ZZZZ    -433.5634
+ -----------------------------------------------------------------
+ Calculating analytic gradient of the SCF energy
+ Gradient of SCF Energy
+            1           2           3
+    1   0.0000000   0.0000000  -0.0000000
+    2  -0.0000000   0.0000000  -0.0000000
+    3  -0.0000003  -0.0067439   0.0067442
+ Max gradient component =       6.744E-03
+ RMS gradient           =       3.179E-03
+ Gradient time:  CPU 7.49 s  wall 1.08 s
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        3       9       0       0       0       0       0       0
+
+ Cartesian Hessian Update
+ Hessian Updated using BFGS Update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   3
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  Zr        0.0000000000    0.0000000000    0.0000031107
+      2  O         0.0000000000    0.0000000000    1.8632263024
+      3  O         0.0000000000    0.0000000000   -1.8632194131
+   Point Group: c1    Number of degrees of freedom:     3
+
+
+   Energy is   -196.971516309
+
+
+ Translations and Rotations Projected Out of Hessian
+
+  2 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.485631    1.000000
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.00018731
+ Step Taken.  Stepsize is  0.019632
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.006744      0.000300      NO
+         Displacement       0.013882      0.001200      NO
+         Energy change     -0.002923      0.000001      NO
+
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      Zr      0.0000000000     0.0000000000     0.0000032675
+    2      O       0.0000000000     0.0000000000     1.8705721457
+    3      O       0.0000000000     0.0000000000    -1.8705654132
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =    63.3686494029 hartrees
+ There are       14 alpha and       14 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =    -0.0000000060 hartrees
+ Requested basis set is non-standard
+ There are 18 shells and 58 basis functions
+ A cutoff of  1.0D-14 yielded    166 shell pairs
+ There are      1777 function pairs (      2037 Cartesian)
+ Requested basis set is non-standard
+ Compound shells will be simplified
+ There are 24 shells and 58 basis functions
+ A cutoff of  1.0D-14 yielded    293 shell pairs
+ There are      1759 function pairs (      2019 Cartesian)
+ Smallest overlap matrix eigenvalue = 1.21E-03
+ Guess MOs from SCF MO coefficient file
+ Reading MOs from coefficient file
+ Reading MOs from coefficient file
+ A restricted hybrid HF-DFT SCF calculation will be
+ performed using Geometric Direct Minimization
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (128,302) quadrature formula
+ Dispersion:   Grimme D3
+ SCF converges when RMS gradient is below 1.0E-08
+ Maximum number of minimization steps = 200
+ Geometry optimization detected.  Setting ReadMinima to 0
+ Setting SaveMinima to 0
+ using 12 threads for integral computing 
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  1
+   GDM::PreWSS: working subspace size set to            1
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   4.440892098500626E-016
+   GDM::BFGS:   lowest Hinv e-value     1.00000000000000     
+   GDM::BFGS:   highest Hinv e-value    1.00000000000000     
+   GDM::      : max scaling in EWCs is          2.71901367950706     
+   GDM::      : max rotation in step is       -1.667503602973421E-003
+   GDM::        grad.step =  -2.957397617316548E-005
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -196.9715957770      1.44E-03  Gap = 192.38 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        5.325534857547609E-008
+   GDM::trust : predicted energy change was   -4.436096425974822E-005
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::search:  On step            1 .  The current bracket is:
+       left   : x =  0.0000E+00, e =      -196.9715957770, g = -0.5873E-02
+       current: x =  0.5035E-02, e =      -196.9715957237, g =  0.5891E-02
+       right  : x =  0.1000E+04, e =      1000.0000000000, g =  0.1000E+04
+       next   : x =  0.2513E-02
+   GDM::      : max rotation in step is       -8.322531213693658E-004
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    2    -196.9715957237      2.15E-03  Gap = 192.38 eV  Line search: overstep
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.478210560890147E-005
+   GDM::trust : predicted energy change was   -4.436096425974822E-005
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  2
+   GDM::PreWSS: working subspace size set to            2
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   2.059880044313900E-013
+   GDM::BFGS:   lowest Hinv e-value    0.295378440621105     
+   GDM::BFGS:   highest Hinv e-value    1.69363671409936     
+   GDM::      : max scaling in EWCs is          2.68217268567352     
+   GDM::      : max rotation in step is        3.146488199298098E-003
+   GDM::        grad.step =  -1.442861874870067E-005
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    3    -196.9716105591      1.54E-03  Gap = 192.38 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        1.120945512411708E-006
+   GDM::trust : predicted energy change was   -2.164292812305101E-005
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::search:  On step            1 .  The current bracket is:
+       left   : x =  0.0000E+00, e =      -196.9716105591, g = -0.3279E-02
+       current: x =  0.4401E-02, e =      -196.9716094381, g =  0.3530E-02
+       right  : x =  0.1000E+04, e =      1000.0000000000, g =  0.1000E+04
+       next   : x =  0.2042E-02
+   GDM::      : max rotation in step is        1.459831216572952E-003
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    4    -196.9716094381      4.99E-04  Gap = 192.38 eV  Line search: overstep
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -6.931637130946910E-006
+   GDM::trust : predicted energy change was   -2.164292812305101E-005
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  3
+   GDM::PreWSS: working subspace size set to            3
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   3.548505586592476E-010
+   GDM::BFGS:   lowest Hinv e-value    0.244931113998244     
+   GDM::BFGS:   highest Hinv e-value    1.31610865512352     
+   GDM::      : max scaling in EWCs is          2.70184030924936     
+   GDM::      : max rotation in step is        5.309619875271922E-004
+   GDM::        grad.step =  -8.937571058604220E-007
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    5    -196.9716174907      2.83E-04  Gap = 192.38 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -4.591988727042917E-007
+   GDM::trust : predicted energy change was   -1.340635658790633E-006
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  4
+   GDM::PreWSS: working subspace size set to            4
+   GDM::PrEWSS: # of linearly dependent vectors =            1
+   GDM::PrEWSS: Max dev from orthonormality =   2.952389444033088E-010
+   GDM::BFGS:   lowest Hinv e-value    0.244503411144849     
+   GDM::BFGS:   highest Hinv e-value    1.24246587527817     
+   GDM::      : max scaling in EWCs is          2.69948760450165     
+   GDM::      : max rotation in step is        1.142655790591212E-004
+   GDM::        grad.step =  -1.781803985771083E-007
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    6    -196.9716179499      1.76E-04  Gap = 192.38 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.800965492293471E-007
+   GDM::trust : predicted energy change was   -2.672705978656624E-007
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  5
+   GDM::PreWSS: working subspace size set to            5
+   GDM::PrEWSS: # of linearly dependent vectors =            2
+   GDM::PrEWSS: Max dev from orthonormality =   5.910057443436756E-010
+   GDM::BFGS:   lowest Hinv e-value    0.244233888907681     
+   GDM::BFGS:   highest Hinv e-value    1.23872108362951     
+   GDM::      : max scaling in EWCs is          2.70065648341074     
+   GDM::      : max rotation in step is        3.636474681443818E-005
+   GDM::        grad.step =  -1.553718871638794E-009
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    7    -196.9716181300      2.05E-05  Gap = 192.38 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.466446519771125E-009
+   GDM::trust : predicted energy change was   -2.330578307458192E-009
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  6
+   GDM::PreWSS: working subspace size set to            6
+   GDM::PrEWSS: # of linearly dependent vectors =            3
+   GDM::PrEWSS: Max dev from orthonormality =   6.197191787515877E-010
+   GDM::BFGS:   lowest Hinv e-value    0.244443735501538     
+   GDM::BFGS:   highest Hinv e-value    1.41151956810536     
+   GDM::      : max scaling in EWCs is          2.70060774794028     
+   GDM::      : max rotation in step is        1.025924318606092E-005
+   GDM::        grad.step =  -1.327387764555249E-010
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    8    -196.9716181315      3.99E-06  Gap = 192.38 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        9.242739906767383E-011
+   GDM::trust : predicted energy change was   -1.991081646832874E-010
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::WARNING energy changes are now smaller than effective accuracy.
+   GDM::        calculation will continue, but THRESH should be increased
+   GDM::        or SCF_CONVERGENCE decreased.
+   GDM::        effective_thresh =   6.197191787515877E-010
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  7
+   GDM::PreWSS: working subspace size set to            7
+   GDM::PrEWSS: # of linearly dependent vectors =            4
+   GDM::PrEWSS: Max dev from orthonormality =   6.808798524993165E-010
+   GDM::BFGS:   lowest Hinv e-value    0.204159745214334     
+   GDM::BFGS:   highest Hinv e-value    1.96569432437490     
+   GDM::      : max scaling in EWCs is          2.70060005302818     
+   GDM::      : max rotation in step is        5.869863206273935E-006
+   GDM::        grad.step =  -2.231620356645225E-010
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    9    -196.9716181314      1.59E-05  Gap = 192.38 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.435012109141098E-010
+   GDM::trust : predicted energy change was   -3.347430534967839E-010
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  8
+   GDM::PreWSS: working subspace size set to            8
+   GDM::PrEWSS: # of linearly dependent vectors =            5
+   GDM::PrEWSS: Max dev from orthonormality =   5.001871139498348E-010
+   GDM::BFGS:   lowest Hinv e-value    0.192683429009285     
+   GDM::BFGS:   highest Hinv e-value    1.67063377312976     
+   GDM::      : max scaling in EWCs is          2.70059862408443     
+   GDM::      : max rotation in step is       -7.086504243425166E-006
+   GDM::        grad.step =  -4.816638210896592E-011
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   10    -196.9716181315      3.33E-06  Gap = 192.38 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -3.541344995028339E-011
+   GDM::trust : predicted energy change was   -7.224957316344889E-011
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  9
+   GDM::PreWSS: working subspace size set to            9
+   GDM::PrEWSS: # of linearly dependent vectors =            6
+   GDM::PrEWSS: Max dev from orthonormality =   3.311514049086917E-010
+   GDM::BFGS:   lowest Hinv e-value    0.212817664192793     
+   GDM::BFGS:   highest Hinv e-value    1.38051884358098     
+   GDM::      : max scaling in EWCs is          2.70060269591417     
+   GDM::      : max rotation in step is        1.978385484275290E-006
+   GDM::        grad.step =  -4.197269302110464E-012
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   11    -196.9716181316      8.05E-07  Gap = 192.38 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -3.836930773104541E-012
+   GDM::trust : predicted energy change was   -6.295903953165698E-012
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 10
+   GDM::PreWSS: working subspace size set to           10
+   GDM::PrEWSS: # of linearly dependent vectors =            8
+   GDM::PrEWSS: Max dev from orthonormality =   1.571817676015996E-011
+   GDM::BFGS:   lowest Hinv e-value    0.200104625077366     
+   GDM::BFGS:   highest Hinv e-value    1.37395761634680     
+   GDM::      : max scaling in EWCs is          2.70060144955074     
+   GDM::      : max rotation in step is        6.712328627768824E-008
+   GDM::        grad.step =  -3.696886626730922E-014
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   12    -196.9716181316      2.12E-07  Gap = 192.38 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -8.526512829121202E-014
+   GDM::trust : predicted energy change was   -5.545329940096385E-014
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 11
+   GDM::PreWSS: working subspace size set to            9
+   GDM::PrEWSS: # of linearly dependent vectors =            6
+   GDM::PrEWSS: Max dev from orthonormality =   1.477448718922858E-011
+   GDM::BFGS:   lowest Hinv e-value    0.186414558142423     
+   GDM::BFGS:   highest Hinv e-value    1.47603704249091     
+   GDM::      : max scaling in EWCs is          2.70060150264928     
+   GDM::      : max rotation in step is       -5.568053801361105E-009
+   GDM::        grad.step =  -1.817365014675116E-016
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   13    -196.9716181316      1.42E-08  Gap = 192.38 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        0.000000000000000E+000
+   GDM::trust : predicted energy change was   -2.726047522012673E-016
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                 10
+   GDM::PreWSS: working subspace size set to            8
+   GDM::PrEWSS: # of linearly dependent vectors =            4
+   GDM::PrEWSS: Max dev from orthonormality =   2.253356876091850E-011
+   GDM::BFGS:   lowest Hinv e-value    0.186612209742654     
+   GDM::BFGS:   highest Hinv e-value    1.38999350888076     
+   GDM::      : max scaling in EWCs is          2.70060150244796     
+   GDM::      : max rotation in step is       -6.821499754618271E-010
+   GDM::        grad.step =  -2.502017739381830E-019
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   14    -196.9716181316      2.24E-10 Convergence criterion met
+ ---------------------------------------
+ One-Electron    Energy =  -412.0183605331
+ Total Coulomb   Energy =   174.6261561521
+ Alpha Exchange  Energy =    -2.1644682584
+ Beta  Exchange  Energy =    -2.1644682584
+ DFT   Exchange  Energy =   -17.3969657335
+ DFT Correlation Energy =    -1.2221608971
+ Nuclear Repu.   Energy =    63.3686493969
+ Nuclear Attr.   Energy =  -584.8522243765
+ Kinetic         Energy =   172.8338638434
+ SCF time:  CPU 22.69 s  wall 3.07 s
+ SCF   energy in the final basis set = -196.9716181316
+ Total energy in the final basis set = -196.9716181316
+ 
+ --------------------------------------------------------------
+ 
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+-19.103 -19.103  -2.109  -1.315  -1.315  -1.304  -0.868  -0.804
+ -0.340  -0.327  -0.327  -0.263  -0.263  -0.226
+ -- Virtual --
+ -0.157  -0.157  -0.152  -0.022  -0.022  -0.014  -0.014   0.021
+  0.034   0.087   0.087   0.159   0.161   0.161   0.175   0.175
+  0.194   0.251   0.251   0.251   0.277   0.330   0.330   0.364
+  0.769   1.183   1.183   1.198   1.198   1.244   1.268   1.718
+  1.816   1.820   1.820   1.829   1.829   1.845   1.845   1.931
+  1.931   1.956   2.045  11.107
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 Zr                    1.428979
+      2 O                    -0.714489
+      3 O                    -0.714489
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 0.0000
+    Dipole Moment (Debye)
+         X       0.0000      Y       0.0000      Z       0.0000
+       Tot       0.0000
+    Quadrupole Moments (Debye-Ang)
+        XX     -27.7437     XY       0.0000     YY     -27.7437
+        XZ       0.0000     YZ       0.0000     ZZ     -60.1068
+    Octopole Moments (Debye-Ang^2)
+       XXX       0.0000    XXY       0.0000    XYY       0.0000
+       YYY       0.0000    XXZ      -0.0001    XYZ       0.0000
+       YYZ      -0.0001    XZZ       0.0000    YZZ       0.0000
+       ZZZ      -0.0006
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX     -33.0500   XXXY       0.0000   XXYY     -11.0167
+      XYYY       0.0000   YYYY     -33.0500   XXXZ       0.0000
+      XXYZ       0.0000   XYYZ       0.0000   YYYZ       0.0000
+      XXZZ     -64.0564   XYZZ       0.0000   YYZZ     -64.0564
+      XZZZ       0.0000   YZZZ       0.0000   ZZZZ    -437.2022
+ -----------------------------------------------------------------
+ Calculating analytic gradient of the SCF energy
+ Gradient of SCF Energy
+            1           2           3
+    1  -0.0000000   0.0000000   0.0000000
+    2  -0.0000000   0.0000000  -0.0000000
+    3  -0.0000001  -0.0006256   0.0006256
+ Max gradient component =       6.256E-04
+ RMS gradient           =       2.949E-04
+ Gradient time:  CPU 7.83 s  wall 1.59 s
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        3       9       0       0       0       0       0       0
+
+ Cartesian Hessian Update
+ Hessian Updated using BFGS Update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   4
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  Zr        0.0000000000    0.0000000000    0.0000032675
+      2  O         0.0000000000    0.0000000000    1.8705721457
+      3  O         0.0000000000    0.0000000000   -1.8705654132
+   Point Group: c1    Number of degrees of freedom:     3
+
+
+   Energy is   -196.971618132
+
+
+ Translations and Rotations Projected Out of Hessian
+
+  2 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.440752    1.000000
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.00000178
+ Step Taken.  Stepsize is  0.002007
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.000626      0.000300      NO
+         Displacement       0.001419      0.001200      NO
+         Energy change     -0.000102      0.000001      NO
+
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      Zr      0.0000000000     0.0000000000     0.0000033170
+    2      O       0.0000000000     0.0000000000     1.8713232239
+    3      O       0.0000000000     0.0000000000    -1.8713165409
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =    63.3432149129 hartrees
+ There are       14 alpha and       14 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =    -0.0000000060 hartrees
+ Requested basis set is non-standard
+ There are 18 shells and 58 basis functions
+ A cutoff of  1.0D-14 yielded    166 shell pairs
+ There are      1777 function pairs (      2037 Cartesian)
+ Requested basis set is non-standard
+ Compound shells will be simplified
+ There are 24 shells and 58 basis functions
+ A cutoff of  1.0D-14 yielded    293 shell pairs
+ There are      1759 function pairs (      2019 Cartesian)
+ Smallest overlap matrix eigenvalue = 1.21E-03
+ Guess MOs from SCF MO coefficient file
+ Reading MOs from coefficient file
+ Reading MOs from coefficient file
+ A restricted hybrid HF-DFT SCF calculation will be
+ performed using Geometric Direct Minimization
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (128,302) quadrature formula
+ Dispersion:   Grimme D3
+ SCF converges when RMS gradient is below 1.0E-08
+ Maximum number of minimization steps = 200
+ Geometry optimization detected.  Setting ReadMinima to 0
+ Setting SaveMinima to 0
+ using 12 threads for integral computing 
+ -------------------------------------------------------
+ OpenMP BLAS3 based DFT computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  1
+   GDM::PreWSS: working subspace size set to            1
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   2.220446049250313E-016
+   GDM::BFGS:   lowest Hinv e-value     1.00000000000000     
+   GDM::BFGS:   highest Hinv e-value    1.00000000000000     
+   GDM::      : max scaling in EWCs is          2.70232103071754     
+   GDM::      : max rotation in step is       -1.694127108412902E-004
+   GDM::        grad.step =  -3.054415612970436E-007
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -196.9716188052      1.47E-04  Gap = 192.45 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        3.041861873498419E-009
+   GDM::trust : predicted energy change was   -4.581623419455654E-007
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::search:  On step            1 .  The current bracket is:
+       left   : x =  0.0000E+00, e =      -196.9716188052, g = -0.5959E-03
+       current: x =  0.5126E-03, e =      -196.9716188022, g =  0.6019E-03
+       right  : x =  0.1000E+04, e =      1000.0000000000, g =  0.1000E+04
+       next   : x =  0.2538E-03
+   GDM::      : max rotation in step is       -8.387109163126925E-005
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    2    -196.9716188022      2.19E-04  Gap = 192.45 eV  Line search: overstep
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.519695729257364E-007
+   GDM::trust : predicted energy change was   -4.581623419455654E-007
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  2
+   GDM::PreWSS: working subspace size set to            2
+   GDM::PrEWSS: # of linearly dependent vectors =            0
+   GDM::PrEWSS: Max dev from orthonormality =   3.764488720747750E-013
+   GDM::BFGS:   lowest Hinv e-value    0.294514545142395     
+   GDM::BFGS:   highest Hinv e-value    1.68954097307999     
+   GDM::      : max scaling in EWCs is          2.69859171132427     
+   GDM::      : max rotation in step is       -3.215847725831734E-004
+   GDM::        grad.step =  -1.485625484779314E-007
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    3    -196.9716189572      1.56E-04  Gap = 192.45 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        1.086601741917548E-008
+   GDM::trust : predicted energy change was   -2.228438227168971E-007
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::search:  On step            1 .  The current bracket is:
+       left   : x =  0.0000E+00, e =      -196.9716189572, g = -0.3322E-03
+       current: x =  0.4473E-03, e =      -196.9716189463, g =  0.3564E-03
+       right  : x =  0.1000E+04, e =      1000.0000000000, g =  0.1000E+04
+       next   : x =  0.2084E-03
+   GDM::      : max rotation in step is       -1.498334162946868E-004
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    4    -196.9716189463      5.04E-05  Gap = 192.45 eV  Line search: overstep
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -7.157302661653375E-008
+   GDM::trust : predicted energy change was   -2.228438227168971E-007
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  3
+   GDM::PreWSS: working subspace size set to            3
+   GDM::PrEWSS: # of linearly dependent vectors =            2
+   GDM::PrEWSS: Max dev from orthonormality =   2.498001805406602E-016
+   GDM::BFGS:   lowest Hinv e-value    0.244735321267136     
+   GDM::BFGS:   highest Hinv e-value    1.31773663988447     
+   GDM::      : max scaling in EWCs is          2.70060123054185     
+   GDM::      : max rotation in step is       -5.437212513568757E-005
+   GDM::        grad.step =  -9.263269335420056E-009
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    5    -196.9716190288      2.98E-05  Gap = 192.45 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -4.759243665830581E-009
+   GDM::trust : predicted energy change was   -1.389490400313008E-008
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  4
+   GDM::PreWSS: working subspace size set to            4
+   GDM::PrEWSS: # of linearly dependent vectors =            3
+   GDM::PrEWSS: Max dev from orthonormality =   4.718447854656915E-016
+   GDM::BFGS:   lowest Hinv e-value    0.244190079125491     
+   GDM::BFGS:   highest Hinv e-value    1.24313107191043     
+   GDM::      : max scaling in EWCs is          2.70034929385438     
+   GDM::      : max rotation in step is        1.165247019898827E-005
+   GDM::        grad.step =  -1.843936358578919E-009
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    6    -196.9716190335      1.79E-05  Gap = 192.45 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.863838861027034E-009
+   GDM::trust : predicted energy change was   -2.765904537868379E-009
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  5
+   GDM::PreWSS: working subspace size set to            5
+   GDM::PrEWSS: # of linearly dependent vectors =            4
+   GDM::PrEWSS: Max dev from orthonormality =   5.273559366969494E-016
+   GDM::BFGS:   lowest Hinv e-value    0.243944231334493     
+   GDM::BFGS:   highest Hinv e-value    1.23921184009029     
+   GDM::      : max scaling in EWCs is          2.70046804831884     
+   GDM::      : max rotation in step is       -3.702199577467902E-006
+   GDM::        grad.step =  -1.629598294053574E-011
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    7    -196.9716190354      2.08E-06  Gap = 192.45 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.440980668121483E-011
+   GDM::trust : predicted energy change was   -2.444397441080362E-011
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  6
+   GDM::PreWSS: working subspace size set to            6
+   GDM::PrEWSS: # of linearly dependent vectors =            5
+   GDM::PrEWSS: Max dev from orthonormality =   1.082467449009528E-015
+   GDM::BFGS:   lowest Hinv e-value    0.244148282200734     
+   GDM::BFGS:   highest Hinv e-value    1.73685464230819     
+   GDM::      : max scaling in EWCs is          2.70046327442407     
+   GDM::      : max rotation in step is       -1.885075040730457E-006
+   GDM::        grad.step =  -5.524092690834002E-012
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    8    -196.9716190354      1.27E-06  Gap = 192.45 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is        1.188027454190888E-011
+   GDM::trust : predicted energy change was   -8.286139036251003E-012
+   GDM::trust : updated trust radius is        0.108900000000000     
+   GDM::WARNING energy changes are now smaller than effective accuracy.
+   GDM::        calculation will continue, but THRESH should be increased
+   GDM::        or SCF_CONVERGENCE decreased.
+   GDM::        effective_thresh =   1.400000000000000E-010
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  7
+   GDM::PreWSS: working subspace size set to            7
+   GDM::PrEWSS: # of linearly dependent vectors =            6
+   GDM::PrEWSS: Max dev from orthonormality =   1.894318035766673E-015
+   GDM::BFGS:   lowest Hinv e-value    0.186044976716438     
+   GDM::BFGS:   highest Hinv e-value    1.42308015458316     
+   GDM::      : max scaling in EWCs is          2.70046122285719     
+   GDM::      : max rotation in step is       -1.299377824106386E-006
+   GDM::        grad.step =  -1.431345854752269E-011
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+    9    -196.9716190354      4.25E-06  Gap = 192.45 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -1.386979420203716E-011
+   GDM::trust : predicted energy change was   -2.147018782128405E-011
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  8
+   GDM::PreWSS: working subspace size set to            8
+   GDM::PrEWSS: # of linearly dependent vectors =            7
+   GDM::PrEWSS: Max dev from orthonormality =   8.257283745649602E-015
+   GDM::BFGS:   lowest Hinv e-value    0.186999483773490     
+   GDM::BFGS:   highest Hinv e-value    1.42883387439245     
+   GDM::      : max scaling in EWCs is          2.70046256086360     
+   GDM::      : max rotation in step is        1.075998297088294E-007
+   GDM::        grad.step =  -2.677829314228067E-014
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   10    -196.9716190354      5.02E-08  Gap = 192.45 eV  Normal BFGS step
+ 
+   ------------------- Entering Geometric Direct Minimization ------------------
+   GDM::trust : actual energy change is       -2.842170943040401E-013
+   GDM::trust : predicted energy change was   -4.016743971342099E-014
+   GDM::trust : updated trust radius is        0.330000000000000     
+   GDM:         diagonal hessian shift is      0.000000000000000E+000
+   GDM::PreWSS: input subspace size is                  9
+   GDM::PreWSS: working subspace size set to            9
+   GDM::PrEWSS: # of linearly dependent vectors =            8
+   GDM::PrEWSS: Max dev from orthonormality =   1.678518435355159E-014
+   GDM::BFGS:   lowest Hinv e-value    0.187338384051221     
+   GDM::BFGS:   highest Hinv e-value    1.36526437887897     
+   GDM::      : max scaling in EWCs is          2.70046257647463     
+   GDM::      : max rotation in step is       -1.832906908379453E-008
+   GDM::        grad.step =  -7.039971629744158E-016
+   ------- Leaving GDM -- hopefully with a step in the right direction! --------
+ 
+   11    -196.9716190354      8.08E-09 Convergence criterion met
+ ---------------------------------------
+ One-Electron    Energy =  -411.9667225286
+ Total Coulomb   Energy =   174.5991148617
+ Alpha Exchange  Energy =    -2.1643755838
+ Beta  Exchange  Energy =    -2.1643755838
+ DFT   Exchange  Energy =   -17.3963631389
+ DFT Correlation Energy =    -1.2221119689
+ Nuclear Repu.   Energy =    63.3432149069
+ Nuclear Attr.   Energy =  -584.7965711470
+ Kinetic         Energy =   172.8298486184
+ SCF time:  CPU 24.56 s  wall 2.50 s
+ SCF   energy in the final basis set = -196.9716190354
+ Total energy in the final basis set = -196.9716190354
+ 
+ --------------------------------------------------------------
+ 
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+-19.103 -19.103  -2.109  -1.316  -1.316  -1.304  -0.868  -0.804
+ -0.340  -0.327  -0.327  -0.263  -0.263  -0.226
+ -- Virtual --
+ -0.157  -0.157  -0.152  -0.022  -0.022  -0.015  -0.015   0.021
+  0.034   0.087   0.087   0.159   0.161   0.161   0.175   0.175
+  0.194   0.251   0.251   0.251   0.276   0.330   0.330   0.364
+  0.769   1.183   1.183   1.198   1.198   1.244   1.268   1.718
+  1.816   1.820   1.820   1.829   1.829   1.845   1.845   1.931
+  1.931   1.955   2.045  11.089
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 Zr                    1.429649
+      2 O                    -0.714825
+      3 O                    -0.714825
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 0.0000
+    Dipole Moment (Debye)
+         X       0.0000      Y       0.0000      Z       0.0000
+       Tot       0.0000
+    Quadrupole Moments (Debye-Ang)
+        XX     -27.7465     XY       0.0000     YY     -27.7465
+        XZ       0.0000     YZ       0.0000     ZZ     -60.1262
+    Octopole Moments (Debye-Ang^2)
+       XXX       0.0000    XXY       0.0000    XYY       0.0000
+       YYY       0.0000    XXZ      -0.0001    XYZ       0.0000
+       YYZ      -0.0001    XZZ       0.0000    YZZ       0.0000
+       ZZZ      -0.0006
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX     -33.0592   XXXY       0.0000   XXYY     -11.0197
+      XYYY       0.0000   YYYY     -33.0592   XXXZ       0.0000
+      XXYZ       0.0000   XYYZ       0.0000   YYYZ       0.0000
+      XXZZ     -64.1003   XYZZ       0.0000   YYZZ     -64.1003
+      XZZZ       0.0000   YZZZ       0.0000   ZZZZ    -437.5760
+ -----------------------------------------------------------------
+ Calculating analytic gradient of the SCF energy
+ Gradient of SCF Energy
+            1           2           3
+    1  -0.0000000   0.0000000  -0.0000000
+    2  -0.0000000  -0.0000000   0.0000000
+    3  -0.0000000  -0.0000116   0.0000116
+ Max gradient component =       1.164E-05
+ RMS gradient           =       5.484E-06
+ Gradient time:  CPU 7.91 s  wall 1.10 s
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        3       9       0       0       0       0       0       0
+
+ Cartesian Hessian Update
+ Hessian Updated using BFGS Update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   5
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  Zr        0.0000000000    0.0000000000    0.0000033170
+      2  O         0.0000000000    0.0000000000    1.8713232239
+      3  O         0.0000000000    0.0000000000   -1.8713165409
+   Point Group: c1    Number of degrees of freedom:     3
+
+
+   Energy is   -196.971619035
+
+
+ Translations and Rotations Projected Out of Hessian
+
+  2 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.432558    1.000000
+
+ Minimum Search - Taking Simple RFO Step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =   0.00000000
+ Step Taken.  Stepsize is  0.000038
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.000012      0.000300     YES
+         Displacement       0.000027      0.001200     YES
+         Energy change     -0.000001      0.000001     YES
+
+
+                       Distance Matrix (Angstroms)
+             Zr(  1)   O (  2)
+   O (  2)  1.871320
+   O (  3)  1.871320  3.742640
+ 
+ Final energy is   -196.971619035410     
+
+
+ ******************************
+ **  OPTIMIZATION CONVERGED  **
+ ******************************
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  Zr        0.0000000000    0.0000000000    0.0000033170
+      2  O         0.0000000000    0.0000000000    1.8713232239
+      3  O         0.0000000000    0.0000000000   -1.8713165409
+
+Z-matrix Print:
+$molecule
+0 1
+Zr
+O  1 1.871320
+O  1 1.871320 2 180.000000
+$end
+
+ 
+ --------------------------------------------------------------
+ 
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+-19.103 -19.103  -2.109  -1.316  -1.316  -1.304  -0.868  -0.804
+ -0.340  -0.327  -0.327  -0.263  -0.263  -0.226
+ -- Virtual --
+ -0.157  -0.157  -0.152  -0.022  -0.022  -0.015  -0.015   0.021
+  0.034   0.087   0.087   0.159   0.161   0.161   0.175   0.175
+  0.194   0.251   0.251   0.251   0.276   0.330   0.330   0.364
+  0.769   1.183   1.183   1.198   1.198   1.244   1.268   1.718
+  1.816   1.820   1.820   1.829   1.829   1.845   1.845   1.931
+  1.931   1.955   2.045  11.089
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 Zr                    1.429649
+      2 O                    -0.714825
+      3 O                    -0.714825
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 0.0000
+    Dipole Moment (Debye)
+         X       0.0000      Y       0.0000      Z       0.0000
+       Tot       0.0000
+    Quadrupole Moments (Debye-Ang)
+        XX     -27.7465     XY       0.0000     YY     -27.7465
+        XZ       0.0000     YZ       0.0000     ZZ     -60.1262
+    Octopole Moments (Debye-Ang^2)
+       XXX       0.0000    XXY       0.0000    XYY       0.0000
+       YYY       0.0000    XXZ      -0.0001    XYZ       0.0000
+       YYZ      -0.0001    XZZ       0.0000    YZZ       0.0000
+       ZZZ      -0.0006
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX     -33.0592   XXXY       0.0000   XXYY     -11.0197
+      XYYY       0.0000   YYYY     -33.0592   XXXZ       0.0000
+      XXYZ       0.0000   XYYZ       0.0000   YYYZ       0.0000
+      XXZZ     -64.1003   XYZZ       0.0000   YYZZ     -64.1003
+      XZZZ       0.0000   YZZZ       0.0000   ZZZZ    -437.5760
+ -----------------------------------------------------------------
+Archival summary:
+1\1\hpc3461\OPT\ProcedureUnspecified\BasisUnspecified\r12(\liqiuy\FriJan1720:03:452020FriJan1720:03:452020\0\\#,OPT,ProcedureUnspecified,BasisUnspecified,\\28,1\Zr\O,1,1.87132\O,1,1.87132,2,180\\\@
+
+ Total job time:  22.71s(wall), 175.82s(cpu) 
+ Fri Jan 17 20:03:45 2020
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+
+0 sent ACK to 0 
+now end server 0 ... 
+cleanup process ... done
